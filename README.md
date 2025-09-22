@@ -309,11 +309,22 @@ The control panel contains buttons 'Terminal Data', 'Verbose' and 'Debug' which 
 Both 'Verbose' and 'Debug' buttons have no effect when 'Terminal Data' is off.
 See the script's code for information on how this data is displayed. The displaying section is placed at the end of the main loop (the 'until scriptend {...}' section).
 
+[back to TOC](#table-of-contents)
+
 ### mkl.ks
+
+
+[back to TOC](#table-of-contents)
 
 ### newname.ks
 
+
+[back to TOC](#table-of-contents)
+
 ### Extra
+
+
+[back to TOC](#table-of-contents)
 .
 .
 .
