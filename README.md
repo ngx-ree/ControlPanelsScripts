@@ -181,6 +181,14 @@ kOS name tagging on the 'elisa 1.0' vessel is as follows:
 - 'solpan' - Solar panels for the extend/retract function.
 - 'ex#1' and 'ex#2' - Two kOS processors, each with its own name, used for directing log messages from one to another.
 
+Example scenario below serves to help you get oriented with the script's typical usage (see also video):  XXXX
+Please follow the exact steps described at least for the first time you try the script. It will help you understand how CP scripts work before you start making your own.
+
+IMPORTANT WARNING!  
+If you set all yaw, pitch, roll and translation to 0, the main throttle also goes to 0 and it is not possible to set it to a non-zero value within the script (more precisely, setting 'ship:control:mainthrottle' to anything doesn't give a ...). I don't know whether it is some kOS bug, or a feature I don't understand.  
+Also pay attention when setting some values, as not everything is checked for validity (for example, this can cause division by zero which makes the script crash).
+
+
 ### mkl.ks
 
 ### newname.ks
