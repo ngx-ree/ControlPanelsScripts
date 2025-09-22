@@ -19,7 +19,7 @@ LaserDist can be downloaded here (it says it’s updated for KSP 1.11.x, but it 
 https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
 ## Table of Contents
-[SCRIPTS FEATURES](#scripts-features)
+[SCRIPTS FEATURES](#scriptxs-features)
 
 INSTALLATION
 
@@ -61,7 +61,7 @@ EXAMPLES
  
 
 
-## SCRIPTS FEATURExS:
+## SCRIPTS FEATURES:
 
 - Graphical input pane with pre-filled values, providing a means to enter and/or edit initial values for variables used within the functional parts of user scripts. The pane also provides the ability to save entered values as inputs automatically loaded at start, or even save various variants of inputs that can be easily selected and saved/loaded on script start.
 
