@@ -188,6 +188,15 @@ IMPORTANT WARNING!
 If you set all yaw, pitch, roll and translation to 0, the main throttle also goes to 0 and it is not possible to set it to a non-zero value within the script (more precisely, setting 'ship:control:mainthrottle' to anything doesn't give a ...). I don't know whether it is some kOS bug, or a feature I don't understand.  
 Also pay attention when setting some values, as not everything is checked for validity (for example, this can cause division by zero which makes the script crash).
 
+1. LAUNCH THE VEHICLE
+- Make sure you saved your screen resolution parameters ('mainx' and 'mainy' keys of 'currsets' lexicon) in the 'etc/settings.lib.ks' file. See [this](#set-your-screen-resolution) section above.
+- Launch the 'elisa 1.0' vessel from the VAB, activate the main engine (stage).
+- Optionally, use cheat (alt+F12 -> Cheats -> Infinite Propellant), if you want to experiment without taking care about fuel consumption. Otherwise, the vessel will automatically (try to) land if fuel goes under 5% (default).
+
+2. OPEN TERMINAL(S)
+- Open both terminal windows ('ex#1' and 'ex#2'). Action group 0 has a toggle set on both of them, so you can press 0 to open/close them. NOTE that 'ex#2' will open on top of 'ex#1', so move it with the mouse.
+- Make sure both terminals are switched to the archive filesystem. Run the 'list.' command to see its content. The listing must contain 'etc' and 'lib' subdirectories, as well as 'example.ks' script. This example uses the 'boot/archive.ks' boot script, so both terminals should already be on the archive. To run scripts from the vessel's local filesystem, scripts and libraries must be copied from the archive. The best way is to use the 'mkl.ks' script to copy them automatically along with all related configuration files and subdirectories (see description of 'mkl.ks' usage below).  
+For this example test, run everything from the archive. The 'elisa 1.0' vessel is equipped with a basic omnidirectional antenna, so the archive volume should be available at the KSC launchpad.
 
 ### mkl.ks
 
