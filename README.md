@@ -166,12 +166,20 @@ kOS remembers some variables set within the script after it ends. This can misle
 ### example.ks
 Script 'example.ks' briefly demonstrates typical CP script functionality and behavior. Its functions are described and commented within the code. It is designed to run with the 'elisa 1.0' vessel and can serve as a template or a base for developing your own scripts. Comments in 'example.ks' code focus on GUI elements mainly, not particularly on the flight's functionality (although there are some).
 
-This example demonstrates creation and usage of:  
+Example scenario below serves to help you get oriented with the script's typical usage (see also video):  XXXX  
+
+Although I think you would figure out the script's behavior and usage just by watching the video and/or reading tooltips (revealed by toggling the '?' button and hovering the mouse cursor over a given control element), it's worth testing it step-by-step as described below, at least for the first time you try the script. It will help you understand how CP scripts work before you start making your own.
+
+The example demonstrates creation and usage of:  
 - Input pane with pre-filled values along with means to save/load various inputs.
 - GUI elements for controlled hovering, ascent/descent, translation and rotation of the 'elisa 1.0' vessel.
 - Stacked multi control panel.
 - Minipanel for horizontal translation control.
 - Display and editing of PID parameters and some other values in real time during the flight with means to save/load them as various named presets.
+
+IMPORTANT WARNING!  
+If you set all yaw, pitch, roll and translation to 0, the main throttle also goes to 0 and it is not possible to set it to a non-zero value within the script (more precisely, setting 'ship:control:mainthrottle' to anything doesn't give a ...). I don't know whether it is some kOS bug, or a feature I don't understand.  
+Also pay attention when setting some values, as not everything is checked for validity (for example, this can cause division by zero which makes the script crash).
 
 NOTE that this script works well only with the 'elisa 1.0' vessel type (facing UP, like a rocket), especially translation control due to it facing upwards. For this example case, the subdirectory 'etc/elisa 1.0' already exists, because it holds an example PID preset (named 'tuned'). For new vessels which do not have their configuration directory present yet, the directory is created automatically after the script's start.
 
@@ -180,13 +188,6 @@ kOS name tagging on the 'elisa 1.0' vessel is as follows:
 - 'leng' - Main liquid fuel engine uses the gimbal lock feature.
 - 'solpan' - Solar panels for the extend/retract function.
 - 'ex#1' and 'ex#2' - Two kOS processors, each with its own name, used for directing log messages from one to another.
-
-Example scenario below serves to help you get oriented with the script's typical usage (see also video):  XXXX
-Please follow the exact steps described at least for the first time you try the script. It will help you understand how CP scripts work before you start making your own.
-
-IMPORTANT WARNING!  
-If you set all yaw, pitch, roll and translation to 0, the main throttle also goes to 0 and it is not possible to set it to a non-zero value within the script (more precisely, setting 'ship:control:mainthrottle' to anything doesn't give a ...). I don't know whether it is some kOS bug, or a feature I don't understand.  
-Also pay attention when setting some values, as not everything is checked for validity (for example, this can cause division by zero which makes the script crash).
 
 #### 1. LAUNCH THE VEHICLE
 - Make sure you saved your screen resolution parameters ('mainx' and 'mainy' keys of 'currsets' lexicon) in the 'etc/settings.lib.ks' file. See [this](#set-your-screen-resolution) section above.
