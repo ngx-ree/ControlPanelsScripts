@@ -104,15 +104,21 @@ etc/templates - Contains templates for each script which will be used to create 
 
 boot - Standard kOS subdirectory containing scripts loaded on boot. The CP scripts package contains script 'archive.ks' which (when set as boot file) switches the terminal to archive filesystem after launch or switching to a given vessel. Its usage is optional, according to your preferences.
 
+[back to TOC](#table-of-contents)
+
 ## BEFORE YOU START
 
 ### Set your screen resolution
 Before you begin working with scripts, set the parameters of your screen resolution in the 'etc/settings.lib.ks' file. This is necessary for the initial GUI positions to be placed correctly.
 Open the file in a text editor and find the following section:
 
+
 global currsets is lexicon(
+
 "mainx",list(1920,"maximum x screen resolution"),
+
 "mainy",list(1080,"maximum y screen resolution"),
+
 
 Replace 1920 with your X screen resolution and 1080 with your Y screen resolution (if you know how to get actual resolution parameters directly in kOS, please let me know).
 CP scripts use the global settings lexicon 'currsets' (current settings) defined in the 'settings.lib.ks' library. It contains the initial screen positions (some of them computed relative to other 'currsets' settings, e.g., the screen's X and Y resolutions), box styles, terminal window width and height, some default colors, and some other default values.
@@ -154,6 +160,8 @@ Some library functions rely on the presence of global variables in main script, 
 For example, you can use the Notepad++ 'Find in Files' function with descent into subdirectories to check for the presence of variables. Check used library function comments (and code) for more information.
 
 kOS remembers some variables set within the script after it ends. This can mislead you when you change your code and re-run the script. Certain variables can seem to be defined and the script will not crash due to their non-existence (referring to a variable before it was created). The safest (but also annoying) way to avoid this is to reboot the kOS terminal (with the 'reboot.' command), so do it from time to time to check if all variable declarations are in order (if you know a better way please let me know. I know there is the 'unset' command, but unsetting all variables one by one is not really a good way).
+
+[back to TOC](#table-of-contents)
 
 
 .
