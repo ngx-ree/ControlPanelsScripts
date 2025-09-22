@@ -8,14 +8,14 @@ These scripts were written on the fly as I played, so some parts could certainly
 
 If you come across a bug or any other problem, or if you need more detailed information, feel free to contact me at ngx.ree [at] gmail [dot] com.
 
-CP scripts require kOS version 1.5 or higher. The latest version can be found here:
-https://github.com/KSP-KOS/KOS/releases
+CP scripts require kOS version 1.5 or higher. The latest version can be found here:  
+https://github.com/KSP-KOS/KOS/releases  
 Of course, don’t forget about dependencies such as ModuleManager.
 
 Older kOS versions have a bug (I believe it’s the one addressed in the “Invoke UI field change callbacks when settings fields” issue) which causes problems with the textfield onconfirm functionality.
 
-An optional mod is Dunbaratu’s LaserDist, an extension of kOS capabilities that provides laser distance-measuring devices. The CP scripts package includes a vessel that uses this mod (along with one of the example scripts). However, if you don’t want to use it, there’s also a version of the vessel without distance meters attached.
-LaserDist can be downloaded here (it says it’s updated for KSP 1.11.x, but it works fine with 1.12.x too):
+An optional mod is Dunbaratu’s LaserDist, an extension of kOS capabilities that provides laser distance-measuring devices. The CP scripts package includes a vessel that uses this mod (along with one of the example scripts). However, if you don’t want to use it, there’s also a version of the vessel without distance meters attached.  
+LaserDist can be downloaded here (it says it’s updated for KSP 1.11.x, but it works fine with 1.12.x too):  
 https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
 ## Table of Contents
