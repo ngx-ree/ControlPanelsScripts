@@ -79,3 +79,29 @@ EXAMPLES
 - Library for commonly used functions, like working with certain parts, helping with navigation, and any other stuff used across multiple scripts. Functions in this library will probably be mostly replaced and/or extended by users' own functions.
 
 - CP scripts use kOS name tagging (dubbing) for individual parts to identify parts for certain actions. For example, engines named 'leng' identify "landing engines" where gimbal actions are performed, while other engines on the same vessel, not dubbed, are not involved in such actions. Naming of parts is set up in the VAB or SPH editor (right click → kOS → name tag:), or it can be done in flight as well in parts' right-click popup. Note that multiple parts should have the same name tag for given actions. For example, if the vessel has four landing engines, they all must have the name tag 'leng'. The exceptions are kOS processors, which should each have their own name so they can reference each other.
+
+
+## INSTALLATION
+
+### Scripts installation
+
+Simply unpack ControlPanelScripts.zip into the kOS archive directory, usually [KSP installation folder]/Ships/Script/. It is also a good idea to back up your 'Script' directory beforehand, just to be sure.  
+There should be no file collisions, but in the very improbable case you have some of your scripts named the same as some of the CP scripts, rename the problematic CP script, but DO CHANGE the variable 'scriptid' at the beginning of the script accordingly (see Script ID below).
+
+### Ships installation
+
+Unpack CPShips.zip or CPShips_noLaser.zip into your save's VAB Ships directory. This package contains example vessels to work with included example scripts. All vessels were created without any other parts mods than kOS and LaserDist. Vessels in CPShips_noLaser.zip are variants without LaserDist mod parts.
+
+### Directory structure
+
+Directory structure of CP scripts adds two subdirectories to the kOS default directory:
+
+lib - Subdirectory containing libraries which are included by 'runoncepath' commands in main scripts.
+
+etc - Subdirectory for saved settings and presets. By default, for each vessel running CP scripts, its own subdirectory in 'etc' is created named by the vessel's name.
+
+etc/templates - Contains templates for each script which will be used to create the initial *PID.include.ks file after the script's first start (the template is simply copied to the ship's subdirectory as a file with a given name following the ship-script naming convention).
+
+boot - Standard kOS subdirectory containing scripts loaded on boot. The CP scripts package contains script 'archive.ks' which (when set as boot file) switches the terminal to archive filesystem after launch or switching to a given vessel. Its usage is optional, according to your preferences.
+
+
