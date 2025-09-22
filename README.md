@@ -50,13 +50,13 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  
 EXAMPLES
 
- - 'example.ks' - Example flight with example vessel
+ - ['example.ks' - Example flight with example vessel](#example.ks)
  
- - 'mkl.ks' - Copying scripts from Archive to ship's local volume
+ - ['mkl.ks' - Copying scripts from Archive to ship's local volume](#mkl.ks)
  
- - 'newname.ks' - Renaming ship and/or migrating configurations from old name to new name
+ - ['newname.ks' - Renaming ship and/or migrating configurations from old name to new name](#newname.ks)
  
- - Extra scripts, already usable in KSP gameplay
+ - [Extra - Scripts already usable in KSP gameplay](#extra)
  
 
 
@@ -162,7 +162,14 @@ kOS remembers some variables set within the script after it ends. This can misle
 
 [back to TOC](#table-of-contents)
 
+## EXAMPLES
+### example.ks
 
+### mkl.ks
+
+### newname.ks
+
+### Extra
 .
 .
 .
