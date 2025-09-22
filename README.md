@@ -175,7 +175,11 @@ This example demonstrates creation and usage of:
 
 NOTE that this script works well only with the 'elisa 1.0' vessel type (facing UP, like a rocket), especially translation control due to it facing upwards. For this example case, the subdirectory 'etc/elisa 1.0' already exists, because it holds an example PID preset (named 'tuned'). For new vessels which do not have their configuration directory present yet, the directory is created automatically after the script's start.
 
-
+#### NAME TAGS
+kOS name tagging on the 'elisa 1.0' vessel is as follows:
+- 'leng' - Main liquid fuel engine uses the gimbal lock feature.
+- 'solpan' - Solar panels for the extend/retract function.
+- 'ex#1' and 'ex#2' - Two kOS processors, each with its own name, used for directing log messages from one to another.
 
 ### mkl.ks
 
