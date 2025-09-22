@@ -19,19 +19,19 @@ LaserDist can be downloaded here (it says it’s updated for KSP 1.11.x, but it 
 https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
 ## Table of Contents
-[SCRIPTS FEATURxES](#scripts-features)
+[SCRIPTS FEATURES](#scripts-features)
 
-INSTALLATION
+[INSTALLATION](#installation)
 
- - Scripts installation
+ - [Scripts installation](#scripts-installation)
  
- - Ships installation
+ - [Ships installation](#ships-installation)
  
- - Directory structure
+ - [Directory structure](#directory-structure)
  
- - Possible conflicts
+ - [Possible conflicts](#possible-conflicts)
  
-BEFORE YOU START
+[BEFORE YOU START](#before-you-start)
 
  - Set your screen resolution
  
@@ -61,19 +61,18 @@ EXAMPLES
  
 
 
-# SCRIPTS FEATURES:
+## SCRIPTS FEATURES
+- Graphical input parameters pane with pre-filled values. This pane is displayed on script start (unless inapplicable, like 'getlogs.ks' or 'mkl.ks') and provides a means to enter and/or edit initial values for variables used within the functional parts of user scripts. The pane also provides the ability to save entered values as inputs automatically loaded at start, or even save various variants of inputs that can be easily selected and saved/loaded on script start.
 
-- Graphical input pane with pre-filled values, providing a means to enter and/or edit initial values for variables used within the functional parts of user scripts. The pane also provides the ability to save entered values as inputs automatically loaded at start, or even save various variants of inputs that can be easily selected and saved/loaded on script start.
+- Basic Control Panel GUI, and more complex control multipanel GUIs with various controlling elements. These elements include combinations of buttons for easy increasing/decreasing of given values, popup menus to select various functionalities, textboxes for displaying messages and tooltips, etc. Complex panels can be minimized (hidden) and restored (shown again) to save screen space without affecting their operations, so the basic CP acts as a sort of task toolbar.
 
-- Basic Control Panel GUI, and more complex control panel GUIs with various controlling elements. More complex elements include combinations of buttons for easy increasing/decreasing of given values, popup menus to select various functionalities, etc. Complex panels can be minimized (hidden) and restored (shown again) to save screen space without affecting their operations, so the basic CP acts as a sort of task toolbar.
+- Minipanels - purpose-specific compact panels that can be invoked/revoked, for example, by a toggle-type button. Minipanels usually contain sets of small control elements and help reduce the number of controlling elements on main panels, keeping them clear and much easier to navigate.
 
-- Minipanels - specific-purpose-focused compact panels that can be invoked/revoked, for example, by a toggle-type button. Minipanels usually contain sets of small controlling parts and help reduce the number of controlling elements on main panels, keeping them clear and much easier to navigate.
+- Mechanism for easy tooltips usage to maintain descriptions of individual functions and control elements.
 
-- PID parameters (and/or any other scalar variables if needed) control panels for displaying/editing said parameters in real time during flight. Edited parameters can be saved under arbitrary names and loaded whenever needed during flight or automatically at script start.
+- PID parameters (and/or any other scalar variables if needed) control panels for displaying/editing said parameters in real time during the flight. Edited parameters can be saved under arbitrary preset names and loaded whenever needed during flight or automatically at script start. Save/Load mechanisms are mainly focused on (but not limited to) various parameter sets - for example, different PIDs for the same vessel on different planets, etc.
 
 - PID parameters (or other stuff if needed) stored in a separate *PID.include.ks file named by script ID and ship name combination. This file is easy to edit (in contrast to .json preset files) and serves as the source for PID parameters for a given script and ship. The file is initially created (after the first script run on a given ship) from a template for the given script.
-
-- Save/Load mechanisms, mainly focused (but not limited to) various parameter sets - for example, different PIDs for the same vessel on different planets, etc.
 
 - Basic orbital functions library for orbit circularization, orbit apsis change, maneuver execution, or crude reentry planning.
 
