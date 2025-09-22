@@ -282,6 +282,32 @@ For this example test, run everything from the archive. The 'elisa 1.0' vessel i
 - To delete inputs, press the 'Delete' button on the 'Save/Load' minipanel. NOTE: to delete 'default' inputs, you must select 'default' and press the 'Load' button before using the 'Delete' button.
 - To run the script with automatically used default inputs you can obviously run 'run example(default).', but for loading 'default' inputs, the parameter can be any value which evaluates to TRUE. For example, 'run example(1).'. Also, if you enter an input name which does not exist, the script loads 'default' inputs instead (it is the same as 'run example(1).' or 'run example(true).').
 
+#### OTHER FUNCTIONS
+##### 'switches' stack - additional options
+On the 'switches' stack of the 'Probe Control' multipanel there are the following options:
+- 'Lock Gimbal' option locks the gimbal of 'leng' dubbed engine(s). Locking the gimbal helps with flight stability as KSP does not try to engage gimballing in addition to gears and RCS.
+- 'Land when low on fuel' option controls automatic landing initiation when the vessel's fuel amount goes under a certain value (5% by default, this can be changed either in the 'Input Parameters' or in the 'machinery settings').
+- 'Autom. gear' option controls automatic gear retract/extend functionality for hovering/ascending (does not work for descending with 'Asc./Desc.') at a certain height. Height values for both retract and extend can be changed either in the 'Input Parameters' or in the 'machinery settings'. Changing the option is effective BEFORE hovering/ascending is initiated.
+- 'Terminal Logs' option controls sending logs ('statmsg' command defined in the 'settings.lib.ks' library) to another kOS terminal window. The target window must be selected in the popup selector next to the checkbox. The target terminal must be running the 'getlogs.ks' script to display messages.
+The 'Ext./Retr. Solar Panels' button toggles solar panels. These panels must be dubbed 'solpan' and must have extend/retract capability of course.
+
+##### Probe Machinery - changing input parameter values
+Press the 'Probe Machinery' button on the basic Control Panel. Select 'machinery settings' from the popup selector. This stack contains values of variables set up on the 'Input Parameters' pane. You can change them during the flight with immediate effect. Press the tooltip button ('?') to see their descriptions. Tooltips are linked to descriptions on the 'Input Parameters' lexicon, so if you change them there, they will show new descriptions here as well.
+
+##### IPU - instructions per update
+IPU settings can be changed in KSP's kOS settings, but if you need to change them on the fly during the flight, press the button whose description starts with 'IPU:' on the top of the basic Control Panel (the number following ':' is the current IPU value). Pressing the button shows the 'IPU' minipanel above the Control Panel with the same functionality as described for 'Vert. velocity' above.
+Note that very low IPU makes script-controlled flight very unstable.
+
+##### GUI positions - configuring GUI screen position saving
+CP scripts save the last GUI positions and selections after the correct exit. Pressing the 'GUI pos.' button on the top of the basic Control Panel shows a minipanel which allows selecting/deselecting the 'Save on Exit' option, saving current positions with the 'Save Positions' button (this will automatically deselect the 'Save on Exit' option so that positions are not overwritten on exit) and deleting saved positions with the 'Delete Positions' button (this will revert GUI positions to the default settings and, of course, it also deselects the 'Save on Exit' option).
+
+##### Terminal output - show or hide data printed in terminal windows
+The control panel contains buttons 'Terminal Data', 'Verbose' and 'Debug' which allow various output to be printed in the terminal window running the 'example.ks' script.
+- 'Terminal Data' button turns on/off all terminal data output with the exception of the first line ('OPCODESLEFT' shows how many instructions are available in addition to the already executed instructions - the more the smoother the script runs, 'curtime' shows the number of seconds from the script's start, 'loop' shows how many seconds the script's main loop took - the smaller the smoother). Turning terminal output off helps with performance when the script is very demanding.
+- 'Verbose' button shows additional data that are not normally needed during the flight.
+- 'Debug' button shows even more data, usually needed for debugging purposes.
+Both 'Verbose' and 'Debug' buttons have no effect when 'Terminal Data' is off.
+See the script's code for information on how this data is displayed. The displaying section is placed at the end of the main loop (the 'until scriptend {...}' section).
 
 ### mkl.ks
 
