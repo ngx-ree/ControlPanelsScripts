@@ -173,6 +173,8 @@ This example demonstrates creation and usage of:
 - Minipanel for horizontal translation control.
 - Display and editing of PID parameters and some other values in real time during the flight with means to save/load them as various named presets.
 
+NOTE that this script works well only with the 'elisa 1.0' vessel type (facing UP, like a rocket), especially translation control due to it facing upwards. For this example case, the subdirectory 'etc/elisa 1.0' already exists, because it holds an example PID preset (named 'tuned'). For new vessels which do not have their configuration directory present yet, the directory is created automatically after the script's start.
+
 
 
 ### mkl.ks
