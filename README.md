@@ -313,7 +313,22 @@ See the script's code for information on how this data is displayed. The display
 [back to TOC](#table-of-contents)
 
 ### mkl.ks
+Script 'mkl.ks' (make locals) is a simple GUI-based file manager for copying scripts and related files from the kOS archive to the vessel's local volume. It scans the kOS 'Script' directory for *.ks files and displays them on a GUI pane, where they can be selected/deselected by checkboxes.  
+Selected files can then be copied to the vessel's local filesystem. Libraries and related settings are copied automatically.
 
+The subdirectory 'lib' is always copied with all CP libraries. Filenames of CP libraries are listed in the 'cplibs' list, declared at the beginning of the 'mkl.ks' script. This ensures omitting any other files occasionally present in the 'lib' directory (for example, if the user used the 'lib' directory before installation of CP scripts). If a newly developed user library should be copied to local volumes as well, its filename must be added to the 'cplibs' list.
+
+The subdirectory 'etc' is copied only with configuration subdirectories and files related to the given script(s) and vessel.
+
+If the vessel has more than one kOS processor, the 'mkl.ks' script can see all of them and copying can be done for each of them independently. This allows you to have different scripts on different kOS local filesystems.
+
+The script also allows saving/loading various selections under named presets.  
+Presets can contain short descriptions for each script, in addition to selections. Descriptions are also shown as tooltips when hovering over the script's labels. This is useful especially for descriptions longer than the related textfield.  
+The 'mkl.ks' script looks for the 'last' preset when it starts. That preset can be created as some "quicksave" by clicking the 'Save last selection' button. If the 'last' preset is not present, the 'mkl.ks' script looks for the 'default' preset (and creates it if it does not exist).
+
+Since the 'mkl.ks' script is not ship-specific, it does not create any subdirectory in the 'etc' directory and has its settings (like saved presets) directly in the 'etc' directory instead.
+
+IMPORTANT: The 'settings' stack of the script is still in BETA. 
 
 [back to TOC](#table-of-contents)
 
