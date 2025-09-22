@@ -19,7 +19,7 @@ LaserDist can be downloaded here (it says it’s updated for KSP 1.11.x, but it 
 https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
 ## Table of Contents
-[SCRIPTS FEATURES](#scriptxs-features)
+[SCRIPTS FEATURxES](#scripts-features)
 
 INSTALLATION
 
