@@ -18,8 +18,50 @@ An optional mod is Dunbaratu’s LaserDist, an extension of kOS capabilities tha
 LaserDist can be downloaded here (it says it’s updated for KSP 1.11.x, but it works fine with 1.12.x too):
 https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
+## Table of Contents
+[SCRIPTS FEATURES](#scripts-features)
 
-MAIN SCRIPT FEATURES:
+INSTALLATION
+
+ - Scripts installation
+ 
+ - Ships installation
+ 
+ - Directory structure
+ 
+ - Possible conflicts
+ 
+BEFORE YOU START
+
+ - Set your screen resolution
+ 
+ - Instructions per update
+ 
+ - kOS HDD sizes
+ 
+ - Script ID ('scriptid' variable)
+ 
+ - Templates
+ 
+ - Local ship files handling
+ 
+ - Usage considerations
+ 
+ - Development considerations
+ 
+EXAMPLES
+
+ - 'example.ks' - Example flight with example vessel
+ 
+ - 'mkl.ks' - Copying scripts from Archive to ship's local volume
+ 
+ - 'newname.ks' - Renaming ship and/or migrating configurations from old name to new name
+ 
+ - Extra scripts, already usable in KSP gameplay
+ 
+
+
+## SCRIPTS FEATURES:
 
 - Graphical input pane with pre-filled values, providing a means to enter and/or edit initial values for variables used within the functional parts of user scripts. The pane also provides the ability to save entered values as inputs automatically loaded at start, or even save various variants of inputs that can be easily selected and saved/loaded on script start.
 
