@@ -109,7 +109,7 @@ boot - Standard kOS subdirectory containing scripts loaded on boot. The CP scrip
 ## BEFORE YOU START
 
 ### Set your screen resolution
-Before you begin working with scripts, set the parameters of your screen resolution in the 'etc/settings.lib.ks' file. This is necessary for the initial GUI positions to be placed correctly.
+Before you begin working with scripts, set the parameters of your screen resolution in the 'etc/settings.lib.ks' file. This is necessary for the initial GUI positions to be placed correctly.  
 Open the file in a text editor and find the following section:
 
 
@@ -122,11 +122,11 @@ Replace 1920 with your X screen resolution and 1080 with your Y screen resolutio
 CP scripts use the global settings lexicon 'currsets' (current settings) defined in the 'settings.lib.ks' library. It contains the initial screen positions (some of them computed relative to other 'currsets' settings, e.g., the screen's X and Y resolutions), box styles, terminal window width and height, some default colors, and some other default values.
 Settings are either read from this lexicon (in the 'settings.lib.ks' library), or can be overridden by a *_settings.json file. This is still experimental, so all you need for now is the 'settings.lib.ks' library and you don't need to worry about it (besides the initial setting of screen resolution, as described above).
 
-In case you do care about settings, here is more information:
-File 'all_settings.json' replaces settings for all scripts regardless of 'scriptid' and the vessel's name. This file is saved directly in the 'etc' subdirectory. It is read first in the sequence.
-File 'scriptid_settings.json' (where scriptid is the actual ID of a given script) replaces settings for the script with the 'scriptid' identifier. This file is saved directly in the 'etc' subdirectory. It is read second in the sequence.
-File 'shipname_scriptid_settings.json' (shipname is the actual ship's name, scriptid is the actual ID of a given script) replaces settings for the script with the 'scriptid' identifier running on the ship with 'shipname'. This file is saved in the 'etc/shipname' subdirectory. It is read third in the sequence.
-The library 'settings.lib.ks' (which must be included first, at the beginning of each CP script) looks for all settings files in the given order and prints 'File not found' if the file is not there. That is not an error message.
+In case you do care about settings, here is more information:  
+File 'all_settings.json' replaces settings for all scripts regardless of 'scriptid' and the vessel's name. This file is saved directly in the 'etc' subdirectory. It is read first in the sequence.  
+File 'scriptid_settings.json' (where scriptid is the actual ID of a given script) replaces settings for the script with the 'scriptid' identifier. This file is saved directly in the 'etc' subdirectory. It is read second in the sequence.  
+File 'shipname_scriptid_settings.json' (shipname is the actual ship's name, scriptid is the actual ID of a given script) replaces settings for the script with the 'scriptid' identifier running on the ship with 'shipname'. This file is saved in the 'etc/shipname' subdirectory. It is read third in the sequence.  
+The library 'settings.lib.ks' (which must be included first, at the beginning of each CP script) looks for all settings files in the given order and prints 'File not found' if the file is not there. That is not an error message.  
 
 ### Instructions per update
 kOS has limitation settings that control how many instructions are run per KSP update. The more instructions, the smoother the script runs (more instructions are performed) at a certain cost to KSP performance. The default IPU value is 200, which is quite low for kOS scripts using complex GUIs (you can literally see them redrawing). Please use higher values, at least 500 or as many as your PC can handle. The IPU can be changed in kOS settings, or from within scripts (all but 'getlogs.ks' and 'mkl.ks' have a button for it).
@@ -155,7 +155,7 @@ Setting some parameters during script run to certain values can be fatal, since 
 Losing some part during the flight (e.g., after bumping into something) can cause the script to crash, if it refers to lost parts. Not all parts are checked for presence constantly.
 
 ### Development considerations
-Some library functions rely on the presence of global variables in main script, so do pay attention to the naming of your own global variable identifiers. Always check if they are not already present and used in some of the libraries. If you use an existing variable identifier in global context, script(s) may not work as intended. Of course, you can use library global variables for your purposes. For example, 'screen.lib.ks' uses 'on' triggers for checking RCS and SAS status change to toggle 'RCS' and 'SAS' buttons if defined, presuming they are created as global variables named 'rcsbtn' and 'sasbtn' respectively.
+Some library functions rely on the presence of global variables in main script, so do pay attention to the naming of your own global variable identifiers. Always check if they are not already present and used in some of the libraries. If you use an existing variable identifier in global context, script(s) may not work as intended. Of course, you can use library global variables for your purposes. For example, 'screen.lib.ks' uses 'on' triggers for checking RCS and SAS status change to toggle 'RCS' and 'SAS' buttons if defined, presuming they are created as global variables named 'rcsbtn' and 'sasbtn' respectively.  
 For example, you can use the Notepad++ 'Find in Files' function with descent into subdirectories to check for the presence of variables. Check used library function comments (and code) for more information.
 
 kOS remembers some variables set within the script after it ends. This can mislead you when you change your code and re-run the script. Certain variables can seem to be defined and the script will not crash due to their non-existence (referring to a variable before it was created). The safest (but also annoying) way to avoid this is to reboot the kOS terminal (with the 'reboot.' command), so do it from time to time to check if all variable declarations are in order (if you know a better way please let me know. I know there is the 'unset' command, but unsetting all variables one by one is not really a good way).
