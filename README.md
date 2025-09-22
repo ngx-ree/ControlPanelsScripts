@@ -28,8 +28,7 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  - [Ships installation](#ships-installation)
  
  - [Directory structure](#directory-structure)
- 
- - [Possible conflicts](#possible-conflicts)
+
  
 [BEFORE YOU START](#before-you-start)
 
@@ -105,3 +104,62 @@ etc/templates - Contains templates for each script which will be used to create 
 boot - Standard kOS subdirectory containing scripts loaded on boot. The CP scripts package contains script 'archive.ks' which (when set as boot file) switches the terminal to archive filesystem after launch or switching to a given vessel. Its usage is optional, according to your preferences.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dummy EOF
