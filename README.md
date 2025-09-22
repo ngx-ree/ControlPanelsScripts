@@ -114,9 +114,7 @@ Open the file in a text editor and find the following section:
 
 
 global currsets is lexicon(
-
 "mainx",list(1920,"maximum x screen resolution"),
-
 "mainy",list(1080,"maximum y screen resolution"),
 
 
