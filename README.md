@@ -113,9 +113,9 @@ Before you begin working with scripts, set the parameters of your screen resolut
 Open the file in a text editor and find the following section:
 
 
-global currsets is lexicon(
-"mainx",list(1920,"maximum x screen resolution"),
-"mainy",list(1080,"maximum y screen resolution"),
+global currsets is lexicon(  
+"mainx",list(1920,"maximum x screen resolution"),  
+"mainy",list(1080,"maximum y screen resolution"),  
 
 
 Replace 1920 with your X screen resolution and 1080 with your Y screen resolution (if you know how to get actual resolution parameters directly in kOS, please let me know).
@@ -141,9 +141,10 @@ Each script must have its 'scriptid' variable set to the script's name (without 
 If no template for a given script exists in the 'etc/templates' subdirectory, the script creates an empty include file in the ship's configuration subdirectory. This file must be manually edited before it works.
 
 ### Local ship files handling
-'mkl.ks' script
+'mkl.ks' script  
 For scripts running on the ship's local filesystem, all necessary libraries and settings need to be copied from archive, along with the script itself. To easily copy scripts from archive to local filesystems, use the GUI-based 'mkl.ks' script, usage described below.
-'newname.ks' script
+
+'newname.ks' script  
 It is crucial for the ship's saved and configuration files to be placed under the correctly named subdirectory with correctly constructed filenames. If you want to rename your ship, or the ship is renamed by KSP, for example, after undocking or separation, use the simple interactive command line utility 'newname.ks'. This utility automatically migrates all the ship's configuration into the new location. The utility's usage is described below.
 
 ### Usage considerations
