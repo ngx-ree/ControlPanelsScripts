@@ -32,21 +32,21 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  
 [BEFORE YOU START](#before-you-start)
 
- - Set your screen resolution
+ - [Set your screen resolution](#set-your-screen-resolution)
  
- - Instructions per update
+ - [Instructions per update](#instructions-per-update)
  
- - kOS HDD sizes
+ - [kOS HDD sizes](#kos-hdd-sizes)
  
- - Script ID ('scriptid' variable)
+ - [Script ID ('scriptid' variable)](#script-id)
  
- - Templates
+ - [Templates](#templates)
  
- - Local ship files handling
+ - [Local ship files handling](#local-ship-files-handling)
  
- - Usage considerations
+ - [Usage considerations](#usage-considerations)
  
- - Development considerations
+ - [Development considerations](#development-considerations)
  
 EXAMPLES
 
