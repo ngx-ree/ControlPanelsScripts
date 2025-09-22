@@ -61,7 +61,7 @@ EXAMPLES
  
 
 
-## SCRIPTS FEATURES:
+## SCRIPTS FEATURExS:
 
 - Graphical input pane with pre-filled values, providing a means to enter and/or edit initial values for variables used within the functional parts of user scripts. The pane also provides the ability to save entered values as inputs automatically loaded at start, or even save various variants of inputs that can be easily selected and saved/loaded on script start.
 
