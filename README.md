@@ -164,6 +164,16 @@ kOS remembers some variables set within the script after it ends. This can misle
 
 ## EXAMPLES
 ### example.ks
+Script 'example.ks' briefly demonstrates typical CP script functionality and behavior. Its functions are described and commented within the code. It is designed to run with the 'elisa 1.0' vessel and can serve as a template or a base for developing your own scripts. Comments in 'example.ks' code focus on GUI elements mainly, not particularly on the flight's functionality (although there are some).
+
+This example demonstrates creation and usage of:  
+- Input pane with pre-filled values along with means to save/load various inputs.
+- GUI elements for controlled hovering, ascent/descent, translation and rotation of the 'elisa 1.0' vessel.
+- Stacked multi control panel.
+- Minipanel for horizontal translation control.
+- Display and editing of PID parameters and some other values in real time during the flight with means to save/load them as various named presets.
+
+
 
 ### mkl.ks
 
