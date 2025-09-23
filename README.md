@@ -58,7 +58,7 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  
  - ['newname.ks'](#newnameks) - Renaming ship and/or migrating configurations from old name to new name
  
- - [Extra](#extra) - Scripts already usable in KSP gameplay
+ - [Extras](#extras) - Scripts already usable in KSP gameplay
  
 
 
@@ -407,7 +407,9 @@ Next:
 
 [back to TOC](#table-of-contents)
 
-### Extra
+### Extras
+
+
 
 
 [back to TOC](#table-of-contents)
