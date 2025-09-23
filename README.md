@@ -328,7 +328,18 @@ The 'mkl.ks' script looks for the 'last' preset when it starts. That preset can 
 
 Since the 'mkl.ks' script is not ship-specific, it does not create any subdirectory in the 'etc' directory and has its settings (like saved presets) directly in the 'etc' directory instead.
 
-IMPORTANT: The 'settings' stack of the script is still in BETA. 
+'mkl.ks' multipanel contains two stacks:  
+'make local files' - controls file operations between the kOS archive and the vessel's local volumes.  
+The first section provides means for save/load operations of selection presets.  
+The second section contains copy options for particular subdirectories and settings files. See tooltips for more info.  
+The next section shows a (paginated) list of .ks files present on the kOS archive volume with selection checkboxes and description editing textfields.  
+The last section contains functional buttons for particular file operations. The volume popup selector offers to select any of the ship's available volumes as a target for copy operations. The 'Save last selection' button provides a "quicksave" for the 'last' preset (automatically loaded on script start). See tooltips for information about other button functions.
+
+'settings' - allows operations with settings files.  
+The first section allows construction of the settings file path. The 'ship ID' and 'ship directory' fields are pre-filled with the current ship's data (can be edited, but you must know what you are doing). The 'settings file' selector offers all three settings file types. The 'script ID' field needs to be edited for a given script whose settings will be created/edited.  
+The second section (filename:) shows the current settings file path.  
+The next section provides means to display, edit, add or delete particular settings items, as well as saving and deleting the settings file itself.  
+The 'settings' stack of the script is still in BETA.
 
 [back to TOC](#table-of-contents)
 
