@@ -333,7 +333,7 @@ Since the 'mkl.ks' script is not ship-specific, it does not create any subdirect
 'make local files' - controls file operations between the kOS archive and the vessel's local volumes.  
 - The first section provides means for save/load operations of selection presets.  
 - The second section contains copy options for particular subdirectories and settings files. See tooltips for more info.  
-- The next section shows a (paginated) list of .ks files present on the kOS archive volume with selection checkboxes and description editing textfields. Note that the 'mkl.ks' script itself is omitted as it makes no sense to copy it to local volume(s).  
+- The next section shows a (paginated) list of .ks files present on the kOS archive volume with selection checkboxes and description editing textfields. The next section shows a (paginated) list of .ks files present on the kOS archive volume with selection checkboxes and description editing textfields. Note that the 'mkl.ks' script itself is omitted as it makes no sense to copy it to local volume(s).
 - The last section contains functional buttons for particular file operations. The volume popup selector offers to select any of the ship's available volumes as a target for copy operations. The 'Save last selection' button provides a "quicksave" for the 'last' preset (automatically loaded on script start). See tooltips for information about other button functions.
 
 'settings' - allows operations with settings files.  
