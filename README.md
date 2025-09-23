@@ -52,13 +52,13 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
  - ['example.ks'](#exampleks) - Example flight with example vessel
 
- - [getlogs.ks - Receiving messages from another terminal](#getlogsks)
+ - ['getlogs.ks'](#getlogsks) - Receiving messages from another terminal
  
- - ['mkl.ks' - Copying scripts from Archive to ship's local volume](#mklks)
+ - ['mkl.ks'](#mklks) - Copying scripts from Archive to ship's local volume
  
- - ['newname.ks' - Renaming ship and/or migrating configurations from old name to new name](#newnameks)
+ - ['newname.ks'](#newnameks) - Renaming ship and/or migrating configurations from old name to new name
  
- - [Extra - Scripts already usable in KSP gameplay](#extra)
+ - [Extra](#extra) - Scripts already usable in KSP gameplay
  
 
 
