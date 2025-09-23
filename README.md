@@ -192,7 +192,7 @@ kOS name tagging on the 'elisa 1.0' vessel is as follows:
 - 'ex#1' and 'ex#2' - Two kOS processors, each with its own name, used for directing log messages from one to another.
 
 #### 1. LAUNCH THE VEHICLE
-- Make sure you saved your screen resolution parameters ('mainx' and 'mainy' keys of 'currsets' lexicon) in the 'etc/settings.lib.ks' file. See related section [above](#set-your-screen-resolution).
+- Make sure you saved your screen resolution parameters ('mainx' and 'mainy' keys of 'currsets' lexicon) in the 'etc/settings.lib.ks' file. See [this](#set-your-screen-resolution) section for details.
 - Launch the 'elisa 1.0' vessel from the VAB, activate the main engine (stage).
 - Optionally, use cheat (alt+F12 -> Cheats -> Infinite Propellant), if you want to experiment without taking care about fuel consumption. Otherwise, the vessel will automatically (try to) land if fuel goes under 5% (default).
 
