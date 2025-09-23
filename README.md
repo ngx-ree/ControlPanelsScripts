@@ -199,7 +199,7 @@ kOS name tagging on the 'elisa 1.0' vessel is as follows:
 #### 2. OPEN TERMINAL(S)
 - Open both terminal windows ('ex#1' and 'ex#2'). Action group 0 has a toggle set on both of them, so you can press 0 to open/close them. NOTE that 'ex#2' will open on top of 'ex#1', so move it with the mouse.
 - Make sure both terminals are switched to the archive filesystem. Run the 'list.' command to see its content. The listing must contain 'etc' and 'lib' subdirectories, as well as 'example.ks' script. This example uses the 'boot/archive.ks' boot script, so both terminals should already be on the archive. To run scripts from the vessel's local filesystem, scripts and libraries must be copied from the archive. The best way is to use the 'mkl.ks' script to copy them automatically along with all related configuration files and subdirectories (see description of 'mkl.ks' usage [below](#mklks)).  
-For this example test, run everything from the archive. The 'elisa 1.0' vessel is equipped with a basic omnidirectional antenna, so the archive volume should be available at the KSC launchpad.
+For this example test, we will run everything from the archive. The 'elisa 1.0' vessel is equipped with a basic omnidirectional antenna, so the archive volume will be available at the KSC launchpad.
 
 #### 3. RUN THE SCRIPT
 - In the 'ex#1' terminal, run the command 'run example.'. Two GUIs will be created: a basic 'Control Panel' GUI in the top right screen corner and an 'Input Parameters' GUI in the middle of the screen.
