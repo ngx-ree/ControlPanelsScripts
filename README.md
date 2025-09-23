@@ -282,7 +282,7 @@ For this example test, we will run everything from the archive. The 'elisa 1.0' 
 - To load saved inputs, press the 'Inputs:' button to create the 'Save/Load' minipanel. Similarly to loading PID presets, select 'input2' input and press 'Load'. The saved values are shown on the 'Input Parameters' pane.
 - Press 'X' on the basic 'Control Panel' and then press 'START'. The script will immediately exit.
 - To run the script with saved inputs without having to load them from the 'Input Parameters' pane, run the script with the input name as a CLI parameter. For example, 'run example(input2).' will immediately start the script with the saved 'input2' input and will not wait for the 'START' button.
-- To delete inputs, press the 'Delete' button on the 'Save/Load' minipanel. NOTE: to delete 'default' inputs, you must select 'default' and press the 'Load' button before using the 'Delete' button.
+- To delete inputs, press the 'Delete' button on the 'Save/Load' minipanel.
 - To run the script with automatically used default inputs you can obviously run 'run example(default).', but for loading 'default' inputs, the parameter can be any value which evaluates to TRUE. For example, 'run example(1).'. Also, if you enter an input name which does not exist, the script loads 'default' inputs instead (it is the same as 'run example(1).' or 'run example(true).').
 
 #### OTHER FUNCTIONS
