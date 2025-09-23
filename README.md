@@ -142,10 +142,10 @@ If no template for a given script exists in the 'etc/templates' subdirectory, th
 
 ### Local ship files handling
 'mkl.ks' script  
-For scripts running on the ship's local filesystem, all necessary libraries and settings need to be copied from archive, along with the script itself. To easily copy scripts from archive to local filesystems, use the GUI-based 'mkl.ks' script, usage described below.
+For scripts running on the ship's local filesystem, all necessary libraries and settings need to be copied from archive, along with the script itself. To easily copy scripts from archive to local filesystems, use the GUI-based 'mkl.ks' script, usage described [below](#mklks).
 
 'newname.ks' script  
-It is crucial for the ship's saved and configuration files to be placed under the correctly named subdirectory with correctly constructed filenames. If you want to rename your ship, or the ship is renamed by KSP, for example, after undocking or separation, use the simple interactive command line utility 'newname.ks'. This utility automatically migrates all the ship's configuration into the new location. The utility's usage is described below.
+It is crucial for the ship's saved and configuration files to be placed under the correctly named subdirectory with correctly constructed filenames. If you want to rename your ship, or the ship is renamed by KSP, for example, after undocking or separation, use the simple interactive command line utility 'newname.ks'. This utility automatically migrates all the ship's configuration into the new location. The utility's usage is described [below](#newnameks).
 
 ### Usage considerations
 Scripts do not work well with the 'RemoteTech' mod due to long-distance time delay. The kOS GUI reacts to button presses as if they were issued remotely even if the button press is invoked from within the script (which is used pretty often). Hence, waiting for the time delay will occur every time the function is invoked by a 'set buttonname:press to true.' call somewhere in the code. Of course, for usage over short distances, where delay is minimal, scripts work well (Minmus is the furthest I tested). Also, crewed/droned vessels work correctly regardless of distance.
