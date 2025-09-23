@@ -374,6 +374,28 @@ IMPORTANT: To continue (or quit) listing by pressing a key, the terminal window 
 
 ### newname.ks
 
+'newname.ks' is a simple command line utility (no GUIs) which updates the ship's configuration directory and files in case the ship's name was changed. The change could be invoked either by the user renaming the ship, or by the separation/undocking process, when KSP adds something to the original name, like "probe", "rover" etc.
+
+Also, the 'newname.ks' utility itself can be used to rename the ship and migrate in a single run.
+
+The main function is to migrate the ship's old configuration directory and files to a new one either by moving or copying (if you need to preserve old files for whatever reason).
+
+'newname.ks' can be run both on a local volume or on the archive (if it runs on the archive, it warns you about it).
+
+The usage is as follows:
+
+If the ship's name was changed (by any KSP action) and you want to update (migrate) configurations:  
+- Run the 'run newname' command.
+
+If you want to change your ship's name and update configurations in a single step:  
+- Run 'run newname("ship-name")', where 'ship-name' is the ship's new name.
+
+Next:  
+- If there is a single configuration directory (normal local volume state, a single ship should have a single configuration directory), 'newname.ks' automatically selects this directory for migration.
+- If there are more directories (either it is run on the archive, or there are old backups on the local volume), the utility shows a list and asks for selection (write the number and press enter). Note that this list is not paginated.
+- In the next step, you can either copy or move configurations, or quit the utility without any changes.
+- Obviously, it makes no sense to change the name to the same name. If either the utility is run without a new name parameter before the ship was renamed, or the selected source configuration directory has the same name as the ship, 'newname.ks' exits without any changes.
+
 
 [back to TOC](#table-of-contents)
 
