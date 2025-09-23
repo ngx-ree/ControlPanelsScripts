@@ -48,7 +48,7 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  
  - [Development considerations](#development-considerations)
  
-[EXAMPLES](#examples)
+[EXAMPLES AND TOOLS](#examples-and-tools)
 
  - ['example.ks'](#exampleks) - Example flight with example vessel
 
@@ -164,7 +164,7 @@ kOS remembers some variables set within the script after it ends. This can misle
 
 [back to TOC](#table-of-contents)
 
-## EXAMPLES
+## EXAMPLES AND TOOLS
 ### example.ks
 Script 'example.ks' briefly demonstrates typical CP script functionality and behavior. Its functions are described and commented within the code. It is designed to run with the 'elisa 1.0' vessel and can serve as a template or a base for developing your own scripts. Comments in 'example.ks' code focus on GUI elements mainly, not particularly on the flight's functionality (although there are some).
 
@@ -315,7 +315,7 @@ See the script's code for information on how this data is displayed. The display
 [back to TOC](#table-of-contents)
 
 ### getlogs.ks
-'getlogs.ks' is a simple script which serves to receive and display messages from other kOS terminals. Messages to be displayed are sent by the kOS command 'processor(cpu)connection:sendmessage(msg)', and CP scripts have already implemented a means to simplify that.
+Script 'getlogs.ks' is a simple tool which serves to receive and display messages from other kOS terminals. Messages to be displayed are sent by the kOS command 'processor(cpu)connection:sendmessage(msg)', and CP scripts have already implemented a means to simplify that.
 The script has only a basic control panel with a single functional button 'Clear Screen' which does exactly what it says.
 
 [back to TOC](#table-of-contents)
@@ -404,13 +404,17 @@ Next:
 - In the next step, you can either copy or move configurations, or quit the utility without any changes.
 - Obviously, it makes no sense to change the name to the same name. If either the utility is run without a new name parameter before the ship was renamed, or the selected source configuration directory has the same name as the ship, 'newname.ks' exits without any changes.
 
-
 [back to TOC](#table-of-contents)
 
 ### Extras
 
+#### g66.ks
 
+#### lnd65.ks
 
+#### ht3.ks
+
+#### gtrn.ks
 
 [back to TOC](#table-of-contents)
 
