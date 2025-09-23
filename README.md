@@ -342,6 +342,34 @@ Since the 'mkl.ks' script is not ship-specific, it does not create any subdirect
 - The next section provides means to display, edit, add or delete particular settings items, as well as saving and deleting the settings file itself.  
 The 'settings' stack of the script is still in BETA.
 
+Script usage example and description:
+
+- Launch the 'elisa 1.0' vessel.
+- Open the terminal window of the 'ex#1' kOS CPU and make sure you are on the archive volume.
+- Run the 'run mkl.' command. The script's GUI opens. This script does not use a basic control panel, just one multipanel with two stacks.
+- Toggle the tooltips ('?') button in the top right corner for more detailed information about particular functional elements when needed.
+- Click the popup menu selector to select the 'make local files' stack, if not already selected.
+- Use the popup selector (first item in the line right below the scripts list) to select the 'ex#1' volume. Since the 'mkl.ks' script was started from the 'ex#1' volume, it should already be selected.
+- Click the 'Show ex#1' button. The contents of the 'ex#1' volume are recursively listed in the 'ex#1' terminal window. Most probably it will show nothing but the 'boot' directory and its contents.
+- Click the 'Clear terminal screen' button. This will perform the 'clearscreen' command on the 'ex#1' terminal window.
+- Click the 'Show Archive' button. The content of the archive volume are recursively listed in the 'ex#1' terminal window. If the list length exceeds the window height (actually about 80% of it), the listing will stop and wait for a keypress.
+
+IMPORTANT: To continue (or quit) listing by pressing a key, the terminal window must be active, which means it must be selected. While waiting for a keypress, the 'mkl.ks' GUI will not respond, although some clicks are cached.
+
+- Clear the terminal window again.
+- Select the checkboxes next to the 'example.ks' and 'newname.ks' labels. This selects the given scripts for copying.
+- Make sure the 'Copy etc' and 'Copy lib' options are selected.
+- Click the 'Copy to ex#1' button and confirm the action (copying always deletes the destination volume, except for the 'boot' subdirectory. The 'etc' subdirectory can also be preserved if the 'Clear etc' option is unchecked). The copy process is displayed in the 'ex#1' terminal window. If the operation is successful, the last line shows DONE. If it has failed for some reason, it shows FAILED.
+- Clear the terminal window again.
+- Clicking the 'Show ex#1' button lists the 'ex#1' volume. It shows scripts and related files copied by the previous action.
+- Use the volume selector to select the 'ex#2' volume.
+- Click the 'Uncheck' button (the line above the scripts list) to clear the current script selection.
+- Select the 'getlogs.ks' script.
+- Click the 'Copy to ex#2' button to copy 'getlogs.ks' to the 'ex#2' volume. Note that action button labels are updated whenever a volume is selected to reflect the currently selected item.
+- The 'ex#2' volume now has the 'getlogs.ks' script and can be used for log reception from scripts running on 'ex#1'.
+- Select the 'ex#1' volume again.
+- Click the 'Switch to ex#1 and quit' button. The 'mkl.ks' script exits and the terminal is switched from the archive to the local 'ex#1' volume.
+
 [back to TOC](#table-of-contents)
 
 ### newname.ks
