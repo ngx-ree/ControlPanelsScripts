@@ -2,7 +2,7 @@
 
 Control Panels (CP) is a set of kOS scripts and libraries that provide a relatively easy way to assemble functional GUIs for controlling loop-based kOS scripts. The scripts use stacks, buttons, sliders, and other graphical elements, along with options to save and load PID parameters (or any other values) as named presets. I've been writing and using these scripts for several years, and since I recycle them quite often, I figured they could be useful for other kOS enthusiasts as well.
 
-Using and developing with CP scripts and libraries assumes prior knowledge of working with and programming in kOS. However, the code is not overly complicated, and if the comments and descriptions aren't enough, it can be easily reverse-engineered and adjusted to fit anyone's specific needs.
+Using and developing with CP scripts and libraries assumes prior knowledge of working with and programming in kOS, as well as programming in general. However, the code is not overly complicated, and if the comments and descriptions aren't enough, it can be easily reverse-engineered and adjusted to fit anyone's specific needs.
 
 These scripts were written on the fly as I played, so some parts could certainly have been done better and made more universal. I've tried to optimize them and eliminate as many bugs as possible. The libraries and the example.ks script are commented with a reasonable level of detail for easier orientation.
 
@@ -50,7 +50,9 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  
 [EXAMPLES](#examples)
 
- - ['example.ks' - Example flight with example vessel](#exampleks)
+ - ['example.ks'](#exampleks) - Example flight with example vessel
+
+ - [getlogs.ks - Receiving messages from another terminal](#getlogsks)
  
  - ['mkl.ks' - Copying scripts from Archive to ship's local volume](#mklks)
  
@@ -309,6 +311,12 @@ The control panel contains buttons 'Terminal Data', 'Verbose' and 'Debug' which 
 - 'Debug' button shows even more data, usually needed for debugging purposes.
 Both 'Verbose' and 'Debug' buttons have no effect when 'Terminal Data' is off.
 See the script's code for information on how this data is displayed. The displaying section is placed at the end of the main loop (the 'until scriptend {...}' section).
+
+[back to TOC](#table-of-contents)
+
+### getlogs.ks
+'getlogs.ks' is a simple script which serves to receive and display messages from other kOS terminals. Messages to be displayed are sent by the kOS command 'processor(cpu)connection:sendmessage(msg)', and CP scripts have already implemented a means to simplify that.
+The script has only a basic control panel with a single functional button 'Clear Screen' which does exactly what it says.
 
 [back to TOC](#table-of-contents)
 
