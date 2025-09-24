@@ -442,7 +442,7 @@ The landing process is active only if the vessel's vertical velocity is negative
 
 The landing process can also be suspended manually with the 'Suspend' button.
 
-NAME TAGS
+##### NAME TAGS
 kOS name tagging for the 'lnd65.ks' script is as follows:
 - 'solpan' - Solar panels to be extended/retracted, manually in the 'switches' stack.
 - 'leng' - Main engine(s) used for landing. This dubbing is mandatory for the script to work.
