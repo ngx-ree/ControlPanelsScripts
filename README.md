@@ -432,8 +432,23 @@ If laser distance meters are used:
 
 See tooltips for more information.
 
+[back to TOC](#table-of-contents)
 
 #### lnd65.ks
+
+This is simpler script for the landing procedure. The vessel's control point must be facing upwards (like a rocket). For example, if you want to use it with 'Rufus 1.0', it must be controlled from the docking port.
+
+The landing process is active only if the vessel's vertical velocity is negative (it is descending/falling) and the pilot throttle is 0. This means you can control the vehicle by manually throttling up and return to automatic landing by setting the throttle down to 0. In practice, if you land on a spot you don't like, don't exit the script, just throttle up and fly away a bit. Then throttle down to 0 and let the vehicle land. Of course, this assumes you have enough fuel and sufficient height.
+
+The landing process can also be suspended manually with the 'Suspend' button.
+
+NAME TAGS
+kOS name tagging for the 'lnd65.ks' script is as follows:
+- 'solpan' - Solar panels to be extended/retracted, manually in the 'switches' stack.
+- 'leng' - Main engine(s) used for landing. This dubbing is mandatory for the script to work.
+- 'wheel' - Wheels (if present), for friction control.
+
+[back to TOC](#table-of-contents)
 
 #### ht3.ks
 
