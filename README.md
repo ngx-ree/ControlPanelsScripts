@@ -412,6 +412,9 @@ Next:
 
 ### Extras
 
+Extras are CP scripts which I use in my KSP gameplay and are in a relatively ready state to be published. There can still be some bugs, but I tried to make sure none of them cause a script crash.  
+Their usage is not extensively described; see tooltips for more info about particular functions. Keep in mind that some functions are still experimental.
+
 #### g66.ks
 The 'g66.ks' script is designed for 'Rufus 1.0'-type craft. It uses a "helicopter" style of steering where movement is achieved and controlled by the tilt of the craft.  
 'Rufus 1.0' has two control points, a dock (for connection to the lander) and a command seat for the pilot.  
