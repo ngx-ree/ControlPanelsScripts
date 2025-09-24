@@ -224,7 +224,7 @@ For this example test, we will run everything from the archive. The 'Elisa 1.0' 
 #### 5. FIRST HOVER
 - Press the `Hover` button. Note that `Hovr. height` (first controls line) is set to 50 m. The vessel will lift off and finally will maintain its height 50 m above the ground.
 - The buttons `Keep Pitch` and `Keep Yaw` are turned on automatically.
-- Note that the first ascent to hovering was far from smooth. PID parameters must be adjusted to address this issue. In this example, a PID preset `tuned` was prepared and copied to the vessel's configuration subdirectory `etc/Elisa 1.0`. Press the 'Land' button on the 'Probe Control' panel. The vessel will land (again, not very smoothly). After landing, all controls including buttons are reset.
+- Note that the first ascent to hovering was far from smooth. PID parameters must be adjusted to address this issue. In this example, a PID preset `tuned` was prepared and copied to the vessel's configuration subdirectory `etc/Elisa 1.0`. Press the `Land` button on the 'Probe Control' panel. The vessel will land (again, not very smoothly). After landing, all controls including buttons are reset.
 
 #### 6. ADJUST PID PARAMETERS
 - Press the `Probe Machinery` button on the basic 'Control Panel' GUI. The `Probe Machinery` GUI will be displayed.
@@ -237,64 +237,64 @@ For this example test, we will run everything from the archive. The 'Elisa 1.0' 
 #### 7. CREATE/CHANGE PRESET
 - Open `Probe Machinery` -> `PID values` again. We will create a new (changed) preset.
 - If you want, change some PID parameter values as you wish (be careful not to crash the vessel).
-- Press the 'Preset:tuned' button to open the `Save/Load` minipanel.
+- Press the `Preset:tuned` button to open the `Save/Load` minipanel.
 - Press the `Save` button. The textbox next to it will become enabled. Write your own preset name and press enter (or click outside the box, kOS behavior...). The new preset is saved.
-- Use the popup selector under the `Save` button to select any available preset, press the `Load` button to load it anytime, press the 'Delete' button to delete the selected (not necessarily loaded) preset.
+- Use the popup selector under the `Save` button to select any available preset, press the `Load` button to load it anytime, press the `Delete` button to delete the selected (not necessarily loaded) preset.
 - Note that all presets are actually .json files in the vessel's configuration subdirectory (`etc/Elisa 1.0` in this case).
 
 #### 8. HOVERING CONTROL
-- Use the left '<<<' and right '>>>' buttons on the first line `Hovr. height` to change the vessel's height. Use the slider (on the left of the '>>>' button) to change the increment. Alternatively you can write the value directly to the line's edit box. Note that after a manual edit of this value, the first click on the '<<<' or '>>>' button will not have an effect. This is due to a specific kOS behavior related to the textfield's 'onconfirm' functionality.
-- Toggle the checkbox (with '>>' label, left of the increment slider) to show/hide the vessel's orientation and movement vectors.
+- Use the left `<<<` and right `>>>` buttons on the first line `Hovr. height` to change the vessel's height. Use the slider (on the left of the `>>>` button) to change the increment. Alternatively you can write the value directly to the line's edit box. Note that after a manual edit of this value, the first click on the `<<<` or `>>>` button will not have an effect. This is due to a specific kOS behavior related to the textfield's 'onconfirm' functionality.
+- Toggle the checkbox (with `>>` label, left of the increment slider) to show/hide the vessel's orientation and movement vectors.
 
 #### 9. VERTICAL VELOCITY CONTROL
-- Note that the 'Vert. velocity' line shows a default setting of 20 m/s. Press the 'Asc./Desc.' button to initiate vertical velocity control. The vessel will start an ascent and will maintain 20 m/s vertical velocity (the last m/s can take a bit longer to adjust, play with PID parameters to tune it if you want).
-- Use the 'Vert. velocity' line slider to set a new value (negative values mean descent). When you move the slider, the new value is displayed in red color. It means it is not effective yet. Press the 'set' button to make it happen.
+- Note that the `Vert. velocity` line shows a default setting of 20 m/s. Press the `Asc./Desc.` button to initiate vertical velocity control. The vessel will start an ascent and will maintain 20 m/s vertical velocity (the last m/s can take a bit longer to adjust, play with PID parameters to tune it if you want).
+- Use the `Vert. velocity` line slider to set a new value (negative values mean descent). When you move the slider, the new value is displayed in red color. It means it is not effective yet. Press the `set` button to make it happen.
 
 #### 10. ROTATION CONTROL
 - Press the `Hover` button to get the probe to its hovering height again.
-- Use the 'Rotate' line's slider to set horizontal axis rotation. Positive value is counter-clockwise rotation, negative is clockwise. Press the 'zero' button to set rotation to 0 rad/s.
-- Toggle the 'Enable Rotation' button to enable/disable rotation control. Note that if you disengage this button, rotation will not stop (while inertia is in effect).
-- Optionally use the 'RCS' button (or in-game controls) to turn RCS on/off.
+- Use the `Rotate` line's slider to set horizontal axis rotation. Positive value is counter-clockwise rotation, negative is clockwise. Press the `zero` button to set rotation to 0 rad/s.
+- Toggle the `Enable Rotation` button to enable/disable rotation control. Note that if you disengage this button, rotation will not stop (while inertia is in effect).
+- Optionally use the `RCS` button (or in-game controls) to turn RCS on/off.
 
 #### 11. TRANSLATION CONTROL MINIPANEL
-- Toggle the 'Translate' button to create/dismiss the 'Horiz. translation' minipanel. Its initial position is next to the 'Probe Control' GUI on its right side.
-- Note that the 'pin' button ('o') on the minipanel is pressed. This means the minipanel will always be created in its initial position next to the 'Probe Control' GUI. Close the minipanel (untoggle the 'Translate' button) and move the 'Probe Control' GUI to a new position. Press the 'Translate' button again. The minipanel will be created next to the 'Probe Control' GUI again.
-- Untoggle the minipanel's 'pin' button and close the minipanel with the 'Translate' button. Move the 'Probe Control' GUI and open the minipanel again. It will be created in its last position. To reset this behavior, toggle the 'pin' button.
+- Toggle the `Translate` button to create/dismiss the `Horiz. translation` minipanel. Its initial position is next to the 'Probe Control' GUI on its right side.
+- Note that the 'pin' button (`o`) on the minipanel is pressed. This means the minipanel will always be created in its initial position next to the 'Probe Control' GUI. Close the minipanel (untoggle the `Translate` button) and move the 'Probe Control' GUI to a new position. Press the `Translate` button again. The minipanel will be created next to the 'Probe Control' GUI again.
+- Untoggle the minipanel's pin button and close the minipanel with the `Translate` button. Move the 'Probe Control' GUI and open the minipanel again. It will be created in its last position. To reset this behavior, toggle the pin button.
 
 #### 12. TRANSLATION CONTROL, TRANSLATE VESSEL
-- Make sure the vessel is hovering and stable. Open 'Horiz. translation' with the 'Translate' button.
-- Toggle the '>>' checkbox on the `Hovr. height` line to show the vessel's vectors. This will help you observe the translation.
-- The 'Elisa 1.0' vessel translation can be controlled along 'ship:facing:starvector' and 'ship:facing:upvector' vectors. Note that since the vessel is actually facing upwards, its 'facing:upvector' is oriented horizontally.
-- Translation is not controlled by PID loops. RCS control values (interval -1,1) are computed as the difference between actual and planned velocity respectively. To adjust these differences (for both horizontal vectors), coefficients are used as multipliers (the bigger the value, the faster the change). These coefficients can be edited and saved/loaded along with PID parameters in the `PID values` stack ('sbd coef.' and 'top coef.' fields), as described previously.
-- You can close and open the 'Horiz. translation' minipanel without affecting the actual translation. It will always be created with the currently used values. Note that minipanels are not just hidden when not opened, they are deconstructed and then constructed again. This helps to save the kOS CPU resources, on the other hand, it is a little pain in the ass to reference their elements within the code.
+- Make sure the vessel is hovering and stable. Open `Horiz. translation` with the `Translate` button.
+- Toggle the `>>` checkbox on the `Hovr. height` line to show the vessel's vectors. This will help you observe the translation.
+- The 'Elisa 1.0' vessel translation can be controlled along `ship:facing:starvector` and `ship:facing:upvector` vectors. Note that since the vessel is actually facing upwards, its `facing:upvector` is oriented horizontally.
+- Translation is not controlled by PID loops. RCS control values (interval -1,1) are computed as the difference between actual and planned velocity respectively. To adjust these differences (for both horizontal vectors), coefficients are used as multipliers (the bigger the value, the faster the change). These coefficients can be edited and saved/loaded along with PID parameters in the `PID values` stack (`sbd coef.` and `top coef.` fields), as described previously.
+- You can close and open the `Horiz. translation` minipanel without affecting the actual translation. It will always be created with the currently used values. Note that minipanels are not just hidden when not opened, they are deconstructed and then constructed again. This helps to save the kOS CPU resources, on the other hand, it is a little pain in the ass to reference their elements within the code.
 
 #### 13. LANDING
-- To land the vessel, simply press the 'Land' button. The script will first automatically set rotation and translation to 0 and then will slowly land the vessel on the ground (it waits for the translation to stop, but not for the rotation). Landing gear is controlled automatically. This can be enabled/disabled in the `switches` stack of the 'Probe Control' multipanel using the 'Autom. gear' checkbox.
+- To land the vessel, simply press the `Land` button. The script will first automatically set rotation and translation to 0 and then will slowly land the vessel on the ground (it waits for the translation to stop, but not for the rotation). Landing gear is controlled automatically. This can be enabled/disabled in the `switches` stack of the 'Probe Control' multipanel using the `Autom. gear` checkbox.
 
 #### 14. EXIT SCRIPT
-- To finish the script, click the red 'X' button on the top right corner of the basic 'Control Panel'. Under the panel's title, two buttons appear, 'Exit' and 'Cancel'. Pressing 'Exit' correctly ends the script. GUI positions are saved, all GUIs are destroyed and lexicons are cleared.
+- To finish the script, click the red `X` button on the top right corner of the basic 'Control Panel'. Under the panel's title, two buttons appear, `Exit` and `Cancel`. Pressing `Exit` correctly ends the script. GUI positions are saved, all GUIs are destroyed and lexicons are cleared.
 
 #### 15. SAVING INPUTS
 - Run the `example.ks` script again with the command `run example.`
-- On the 'Input Parameters' pane, change some values, for example, set 'hover height' to 90, check the 'load preset at start' checkbox and select the intended preset, for example, `tuned`. Don't press `START` yet.
-- Press the button in the low left corner of the pane, its label starts with 'Inputs:'. The `Save/Load` minipanel is displayed next to the pane on the top left corner.
-- Press the `Save` button and enter your inputs name in the enabled textbox, for example, 'input2'. Confirm with enter.
+- On the 'Input Parameters' pane, change some values, for example, set `hover height` to 90, check the `load preset at start` checkbox and select the intended preset, for example, `tuned`. Don't press `START` yet.
+- Press the button in the low left corner of the pane, its label starts with `Inputs:`. The `Save/Load` minipanel is displayed next to the pane on the top left corner.
+- Press the `Save` button and enter your inputs name in the enabled textbox, for example, `input2`. Confirm with enter.
 - Press `START`, the script runs with new input values. Exit the script.
 
 #### 16. USING SAVED INPUTS ON START
 - Run the `example.ks` script again with the command `run example.`
-- To load saved inputs, press the 'Inputs:' button to create the `Save/Load` minipanel. Similarly to loading PID presets, select 'input2' input and press `Load`. The saved values are shown on the 'Input Parameters' pane.
-- Press 'X' on the basic 'Control Panel' and then press `START`. The script will immediately exit.
-- To run the script with saved inputs without having to load them from the 'Input Parameters' pane, run the script with the input name as a CLI parameter. For example, 'run example(input2).' will immediately start the script with the saved 'input2' input and will not wait for the `START` button.
-- To delete inputs, press the 'Delete' button on the `Save/Load` minipanel.
-- To run the script with automatically used default inputs you can obviously run 'run example(default).', but for loading 'default' inputs, the parameter can be any value which evaluates to TRUE. For example, 'run example(1).'. Also, if you enter an input name which does not exist, the script loads 'default' inputs instead (it is the same as 'run example(1).' or 'run example(true).').
+- To load saved inputs, press the `Inputs:` button to create the `Save/Load` minipanel. Similarly to loading PID presets, select `input2` input and press `Load`. The saved values are shown on the 'Input Parameters' pane.
+- Press `X` on the basic 'Control Panel' and then press `START`. The script will immediately exit.
+- To run the script with saved inputs without having to load them from the 'Input Parameters' pane, run the script with the input name as a CLI parameter. For example, `run example("input2").` will immediately start the script with the saved `input2` input and will not wait for the `START` button.
+- To delete inputs, press the `Delete` button on the `Save/Load` minipanel.
+- To run the script with automatically used default inputs you can obviously run `run example("default").`, but for loading 'default' inputs, the parameter can be any value which evaluates to TRUE. For example, `run example(1).`. Also, if you enter an input name which does not exist, the script loads 'default' inputs instead (it is the same as `run example(1).` or `run example(true).`).
 
 #### OTHER FUNCTIONS
 ##### `switches` stack - additional options
 On the `switches` stack of the 'Probe Control' multipanel there are the following options:
 - 'Lock Gimbal' option locks the gimbal of `leng` dubbed engine(s). Locking the gimbal helps with flight stability as KSP does not try to engage gimballing in addition to gears and RCS.
 - 'Land when low on fuel' option controls automatic landing initiation when the vessel's fuel amount goes under a certain value (5% by default, this can be changed either in the 'Input Parameters' or in the `machinery settings`).
-- 'Autom. gear' option controls automatic gear retract/extend functionality for hovering/ascending (does not work for descending with 'Asc./Desc.') at a certain height. Height values for both retract and extend can be changed either in the 'Input Parameters' or in the `machinery settings`. Changing the option is effective BEFORE hovering/ascending is initiated.
+- `Autom. gear` option controls automatic gear retract/extend functionality for hovering/ascending (does not work for descending with `Asc./Desc.`) at a certain height. Height values for both retract and extend can be changed either in the 'Input Parameters' or in the `machinery settings`. Changing the option is effective BEFORE hovering/ascending is initiated.
 - `Terminal logs` option controls sending logs ('statmsg' command defined in the `settings.lib.ks` library) to another kOS terminal window. The target window must be selected in the popup selector next to the checkbox. The target terminal must be running the `getlogs.ks` script to display messages.
 The 'Ext./Retr. Solar Panels' button toggles solar panels. These panels must be dubbed `solpan` and must have extend/retract capability of course.
 
@@ -302,7 +302,7 @@ The 'Ext./Retr. Solar Panels' button toggles solar panels. These panels must be 
 Press the `Probe Machinery` button on the basic Control Panel. Select `machinery settings` from the popup selector. This stack contains values of variables set up on the 'Input Parameters' pane. You can change them during the flight with immediate effect. Press the tooltip button ('?') to see their descriptions. Tooltips are linked to descriptions on the 'Input Parameters' lexicon, so if you change them there, they will show new descriptions here as well.
 
 ##### IPU - instructions per update
-IPU settings can be changed in KSP's kOS settings, but if you need to change them on the fly during the flight, press the button whose description starts with 'IPU:' on the top of the basic Control Panel (the number following ':' is the current IPU value). Pressing the button shows the 'IPU' minipanel above the Control Panel with the same functionality as described for 'Vert. velocity' above.
+IPU settings can be changed in KSP's kOS settings, but if you need to change them on the fly during the flight, press the button whose description starts with 'IPU:' on the top of the basic Control Panel (the number following ':' is the current IPU value). Pressing the button shows the 'IPU' minipanel above the Control Panel with the same functionality as described for `Vert. velocity` above.
 Note that very low IPU makes script-controlled flight very unstable.
 
 ##### GUI positions - configuring GUI screen position saving
