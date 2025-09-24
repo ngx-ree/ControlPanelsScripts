@@ -448,6 +448,8 @@ kOS name tagging for the 'lnd65.ks' script is as follows:
 - 'leng' - Main engine(s) used for landing. This dubbing is mandatory for the script to work.
 - 'wheel' - Wheels (if present), for friction control.
 
+See tooltips for more information.
+
 [back to TOC](#table-of-contents)
 
 #### ht3.ks
