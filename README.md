@@ -83,7 +83,7 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
 - Library for commonly used functions, like working with certain parts, helping with navigation, and any other stuff used across multiple scripts. Functions in this library will probably be mostly replaced and/or extended by users' own functions.
 
-- CP scripts use kOS name tagging (dubbing) for individual parts to identify parts for certain actions. For example, engines named `leng` identify "landing engines" where gimbal actions are performed, while other engines on the same vessel, not dubbed, are not involved in such actions. Naming of parts is set up in the VAB or SPH editor (right click → kOS → name tag:), or it can be done in flight as well in parts' right-click popup. Note that multiple parts should have the same name tag for given actions. For example, if the vessel has four landing engines, they all must have the name tag `leng`. The exceptions are kOS processors, which should each have their own name so they can reference each other.
+- CP scripts use kOS name tagging (dubbing) for individual parts to identify parts for certain actions. For example, engines named 'leng' identify "landing engines" where gimbal actions are performed, while other engines on the same vessel, not dubbed, are not involved in such actions. Naming of parts is set up in the VAB or SPH editor (right click → kOS → name tag:), or it can be done in flight as well in parts' right-click popup. Note that multiple parts should have the same name tag for given actions. For example, if the vessel has four landing engines, they all must have the name tag 'leng'. The exceptions are kOS processors, which should each have their own name so they can reference each other.
 
 [back to TOC](#table-of-contents)
 
@@ -191,9 +191,9 @@ NOTE that this script works well only with the 'Elisa 1.0' vessel type (facing U
 
 #### NAME TAGS
 kOS name tagging on the 'Elisa 1.0' vessel is as follows:
-- `leng` - Main liquid fuel engine uses the gimbal lock feature.
-- `solpan` - Solar panels for the extend/retract function.
-- `ex#1` and `ex#2` - Two kOS processors, each with its own name, used for directing log messages from one to another.
+- 'leng' - Main liquid fuel engine uses the gimbal lock feature.
+- 'solpan' - Solar panels for the extend/retract function.
+- 'ex#1' and 'ex#2' - Two kOS processors, each with its own name, used for directing log messages from one to another.
 
 #### 1. LAUNCH THE VEHICLE
 - Make sure you saved your screen resolution parameters ('mainx' and 'mainy' keys of `currsets` lexicon) in the `etc/settings.lib.ks` file. See [this](#set-your-screen-resolution) section for details.
@@ -201,12 +201,12 @@ kOS name tagging on the 'Elisa 1.0' vessel is as follows:
 - Optionally, use cheat (alt+F12 -> Cheats -> Infinite Propellant), if you want to experiment without taking care about fuel consumption. Otherwise, the vessel will automatically (try to) land if fuel goes under 5% (default).
 
 #### 2. OPEN TERMINAL(S)
-- Open both terminal windows (`ex#1` and `ex#2`). Action group 0 has a toggle set on both of them, so you can press 0 to open/close them. NOTE that `ex#2` will open on top of `ex#1`, so move it with the mouse.
+- Open both terminal windows ('ex#1' and 'ex#2'). Action group 0 has a toggle set on both of them, so you can press 0 to open/close them. NOTE that 'ex#2' will open on top of 'ex#1', so move it with the mouse.
 - Make sure both terminals are switched to the archive filesystem. Run the `list.` command to see its content. The listing must contain `etc` and `lib` subdirectories, as well as `example.ks` script. This example uses the `boot/archive.ks` boot script, so both terminals should already be on the archive. To run scripts from the vessel's local filesystem, scripts and libraries must be copied from the archive. The best way is to use the `mkl.ks` script to copy them automatically along with all related configuration files and subdirectories (see description of `mkl.ks` usage [below](#mklks)).  
 For this example test, we will run everything from the archive. The 'Elisa 1.0' vessel is equipped with a basic omnidirectional antenna, so the archive volume will be available at the KSC launchpad.
 
 #### 3. RUN THE SCRIPT
-- In the `ex#1` terminal, run the command `run example.`. Two GUIs will be created: a basic 'Control Panel' GUI in the top right screen corner and an 'Input Parameters' GUI in the middle of the screen.
+- In the 'ex#1' terminal, run the command `run example.`. Two GUIs will be created: a basic 'Control Panel' GUI in the top right screen corner and an 'Input Parameters' GUI in the middle of the screen.
 - Check input parameters. Press the `?` button in the top right corner of the 'Input Parameters' pane. A tooltip display box will be shown at the bottom of the pane. Hover the mouse over input prompt labels to display tooltips (prompt descriptions) in that box. For now, don't change any values.
 - Press the `START` button. The 'Input Parameters' pane will be dismissed and the 'Probe Control: Elisa 1.0' multipanel will be displayed in the top left screen corner.
 - Press the minimize (`_`) button in the top right corner of the multipanel. The multipanel will be hidden and the basic 'Control Panel' GUI will get a new button 'Probe Control:Elisa 1.0'. Press that button to show the controls multipanel again.
@@ -214,11 +214,11 @@ For this example test, we will run everything from the archive. The 'Elisa 1.0' 
 - Since this script does not have a ship-specific `*PID.include.ks` file yet, it will be created from the `etc/example_PID.template.ks` file. A green popup message will appear in the center of the screen. Press `OK` to dismiss it.
 
 #### 4. OPTIONALLY WATCH LOG MESSAGES
-- Optionally, if you want to watch log messages in the `ex#2` terminal window, do the following (otherwise you can close the `ex#2` terminal, we will not need it):
-- In the `ex#2` terminal, run the command `run getlogs.`. You can move GUIs with the mouse if they are obstructing each other.
+- Optionally, if you want to watch log messages in the 'ex#2' terminal window, do the following (otherwise you can close the 'ex#2' terminal, we will not need it):
+- In the 'ex#2' terminal, run the command `run getlogs.`. You can move GUIs with the mouse if they are obstructing each other.
 - Click the popup menu selector on top of the 'Probe Control' multipanel. Select `switches` stack. The panel will switch itself from `controls` elements to `switches` elements.
-- Turn the `Terminal logs` checkbox ON and make sure the popup selector next to the checkbox shows `ex#2`. This option can also be set in the 'Input Parameters' pane and saved as inputs so that logging is active automatically.
-- Optionally, once you're here, extend solar panels with the `Ext./Retr. Solar Panels` button. NOTE that solar panels must be kOS tagged (named) `solpan` for this function to work.
+- Turn the `Terminal logs` checkbox ON and make sure the popup selector next to the checkbox shows 'ex#2'. This option can also be set in the 'Input Parameters' pane and saved as inputs so that logging is active automatically.
+- Optionally, once you're here, extend solar panels with the `Ext./Retr. Solar Panels` button. NOTE that solar panels must be kOS tagged (named) 'solpan' for this function to work.
 - Switch back to the `controls` stack using the popup selector on top of the multipanel.
 
 #### 5. FIRST HOVER
@@ -292,11 +292,11 @@ For this example test, we will run everything from the archive. The 'Elisa 1.0' 
 #### OTHER FUNCTIONS
 ##### `switches` stack - additional options
 On the `switches` stack of the 'Probe Control' multipanel there are the following options:
-- 'Lock Gimbal' option locks the gimbal of `leng` dubbed engine(s). Locking the gimbal helps with flight stability as KSP does not try to engage gimballing in addition to gears and RCS.
+- 'Lock Gimbal' option locks the gimbal of 'leng' dubbed engine(s). Locking the gimbal helps with flight stability as KSP does not try to engage gimballing in addition to gears and RCS.
 - 'Land when low on fuel' option controls automatic landing initiation when the vessel's fuel amount goes under a certain value (5% by default, this can be changed either in the 'Input Parameters' or in the `machinery settings`).
 - `Autom. gear` option controls automatic gear retract/extend functionality for hovering/ascending (does not work for descending with `Asc./Desc.`) at a certain height. Height values for both retract and extend can be changed either in the 'Input Parameters' or in the `machinery settings`. Changing the option is effective BEFORE hovering/ascending is initiated.
 - `Terminal logs` option controls sending logs ('statmsg' command defined in the `settings.lib.ks` library) to another kOS terminal window. The target window must be selected in the popup selector next to the checkbox. The target terminal must be running the `getlogs.ks` script to display messages.
-The `Ext./Retr. Solar Panels` button toggles solar panels. These panels must be dubbed `solpan` and must have extend/retract capability of course.
+The `Ext./Retr. Solar Panels` button toggles solar panels. These panels must be dubbed 'solpan' and must have extend/retract capability of course.
 
 ##### Probe Machinery - changing input parameter values
 Press the `Probe Machinery` button on the basic Control Panel. Select `machinery settings` from the popup selector. This stack contains values of variables set up on the 'Input Parameters' pane. You can change them during the flight with immediate effect. Press the tooltip button (`?`) to see their descriptions. Tooltips are linked to descriptions on the 'Input Parameters' lexicon, so if you change them there, they will show new descriptions here as well.
@@ -357,30 +357,30 @@ The `settings` stack of the script is still in BETA.
 Script usage example and description:
 
 - Launch the 'Elisa 1.0' vessel.
-- Open the terminal window of the `ex#1` kOS CPU and make sure you are on the archive volume.
+- Open the terminal window of the 'ex#1' kOS CPU and make sure you are on the archive volume.
 - Run the `run mkl.` command. The script's GUI opens. This script does not use a basic control panel, just one multipanel with two stacks.
 - Toggle the tooltips (`?`) button in the top right corner for more detailed information about particular functional elements when needed.
 - Click the popup menu selector to select the `make local files` stack, if not already selected.
-- Use the popup selector (first item in the line right below the scripts list) to select the `ex#1` volume. Since the `mkl.ks` script was started from the `ex#1` volume, it should already be selected.
-- Click the `Show ex#1` button. The contents of the `ex#1` volume are recursively listed in the `ex#1` terminal window. Most probably it will show nothing but the `boot` directory and its contents.
-- Click the `Clear terminal screen` button. This will perform the `clearscreen` command on the `ex#1` terminal window.
-- Click the `Show Archive` button. The content of the archive volume are recursively listed in the `ex#1` terminal window. If the list length exceeds the window height (actually about 80% of it), the listing will stop and wait for a keypress.
+- Use the popup selector (first item in the line right below the scripts list) to select the 'ex#1' volume. Since the `mkl.ks` script was started from the 'ex#1' volume, it should already be selected.
+- Click the `Show ex#1` button. The contents of the 'ex#1' volume are recursively listed in the 'ex#1' terminal window. Most probably it will show nothing but the `boot` directory and its contents.
+- Click the `Clear terminal screen` button. This will perform the `clearscreen` command on the 'ex#1' terminal window.
+- Click the `Show Archive` button. The content of the archive volume are recursively listed in the 'ex#1' terminal window. If the list length exceeds the window height (actually about 80% of it), the listing will stop and wait for a keypress.
 
 IMPORTANT: To continue (or quit) listing by pressing a key, the terminal window must be active, which means it must be selected. While waiting for a keypress, the `mkl.ks` GUI will not respond, although some clicks are cached.
 
 - Clear the terminal window again.
 - Select the checkboxes next to the `example.ks` and `newname.ks` labels. This selects the given scripts for copying.
 - Make sure the `Copy etc` and `Copy lib` options are selected.
-- Click the `Copy to ex#1` button and confirm the action (copying always deletes the destination volume, except for the `boot` subdirectory. The `etc` subdirectory can also be preserved if the `Clear etc` option is unchecked). The copy process is displayed in the `ex#1` terminal window. If the operation is successful, the last line shows 'DONE'. If it has failed for some reason, it shows 'FAILED'.
+- Click the `Copy to ex#1` button and confirm the action (copying always deletes the destination volume, except for the `boot` subdirectory. The `etc` subdirectory can also be preserved if the `Clear etc` option is unchecked). The copy process is displayed in the 'ex#1' terminal window. If the operation is successful, the last line shows 'DONE'. If it has failed for some reason, it shows 'FAILED'.
 - Clear the terminal window again.
-- Clicking the `Show ex#1` button lists the `ex#1` volume. It shows scripts and related files copied by the previous action.
-- Use the volume selector to select the `ex#2` volume.
+- Clicking the `Show ex#1` button lists the 'ex#1' volume. It shows scripts and related files copied by the previous action.
+- Use the volume selector to select the 'ex#2' volume.
 - Click the `Uncheck` button (the line above the scripts list) to clear the current script selection.
 - Select the `getlogs.ks` script.
-- Click the `Copy to ex#2` button to copy `getlogs.ks` to the `ex#2` volume. Note that action button labels are updated whenever a volume is selected to reflect the currently selected item.
-- The `ex#2` volume now has the `getlogs.ks` script and can be used for log reception from scripts running on `ex#1`.
-- Select the `ex#1` volume again.
-- Click the `Switch to ex#1 and quit` button. The `mkl.ks` script exits and the terminal is switched from the archive to the local `ex#1` volume.
+- Click the `Copy to ex#2` button to copy `getlogs.ks` to the 'ex#2' volume. Note that action button labels are updated whenever a volume is selected to reflect the currently selected item.
+- The 'ex#2' volume now has the `getlogs.ks` script and can be used for log reception from scripts running on 'ex#1'.
+- Select the 'ex#1' volume again.
+- Click the `Switch to ex#1 and quit` button. The `mkl.ks` script exits and the terminal is switched from the archive to the local 'ex#1' volume.
 
 [back to TOC](#table-of-contents)
 
@@ -424,14 +424,14 @@ The Mun is the best place to test `g66.ks` with 'Rufus 1.0'. You can get there w
 
 ##### NAME TAGS
 kOS name tagging for the `g66.ks` script is as follows:
-- `solpan` - Solar panels to be extended/retracted, either manually or automatically.
-- `leng` - Main engines, in this case dubbed for gimbal control (lock).
-- `wheel` - Wheels, for friction control.
+- 'solpan' - Solar panels to be extended/retracted, either manually or automatically.
+- 'leng' - Main engines, in this case dubbed for gimbal control (lock).
+- 'wheel' - Wheels, for friction control.
 
 If laser distance meters are used:
-- `lsrl` - Left laser Dist-o-meter
-- `lsrm` - Middle laser Dist-o-meter
-- `lsrr` - Right laser Dist-o-meter
+- 'lsrl' - Left laser Dist-o-meter
+- 'lsrm' - Middle laser Dist-o-meter
+- 'lsrr' - Right laser Dist-o-meter
 
 See tooltips for more information.
 
@@ -447,9 +447,9 @@ The landing process can also be suspended manually with the `Suspend` button.
 
 ##### NAME TAGS
 kOS name tagging for the 'lnd65.ks' script is as follows:
-- `solpan` - Solar panels to be extended/retracted, manually in the `switches` stack.
-- `leng` - Main engine(s) used for landing. This dubbing is mandatory for the script to work.
-- `wheel` - Wheels (if present), for friction control.
+- 'solpan' - Solar panels to be extended/retracted, manually in the `switches` stack.
+- 'leng' - Main engine(s) used for landing. This dubbing is mandatory for the script to work.
+- 'wheel' - Wheels (if present), for friction control.
 
 See tooltips for more information.
 
@@ -465,7 +465,7 @@ The script supports switching between targets. If no target is selected, it exit
 
 NAME TAGS
 kOS name tagging for the 'lnd65.ks' script is as follows:
-- `solpan` - Solar panels to be extended/retracted, manually in the `switches` stack.
+- 'solpan' - Solar panels to be extended/retracted, manually in the `switches` stack.
 
 See tooltips for more information.
 
