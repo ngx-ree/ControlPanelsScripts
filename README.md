@@ -417,6 +417,8 @@ The 'g66.ks' script is designed for 'Rufus 1.0'-type craft. It uses a "helicopte
 'Rufus 1.0' has two control points, a dock (for connection to the lander) and a command seat for the pilot.  
 For the script to work properly, control must be set up from the command seat.  
 
+The Mun is the best place to test 'g66.ks' with 'Rufus 1.0'. You can get there with the 'Munica 1.0' rocket, or you can simply cheat it by Alt+F12 -> Cheats -> Set Position to save time.
+
 ##### NAME TAGS
 kOS name tagging for the 'g66.ks' script is as follows:
 - 'solpan' - Solar panels to be extended/retracted, either manually or automatically.
