@@ -454,6 +454,20 @@ See tooltips for more information.
 
 #### ht3.ks
 
+Script 'ht3.ks' (hold target) is most useful in rendezvous (undocked) situations, where it secures a constant distance between the vessel and its target (e.g., the second vessel). For example, if you go EVA from your rocket to fix an orbital telescope, you can run this script on your ship with the telescope as a target and you don't have to worry it will drift away.
+
+The script also has elements to control translation and rotation of the vehicle for some position fine-tuning.
+
+The script supports switching between targets. If no target is selected, it exits immediately.
+
+NAME TAGS
+kOS name tagging for the 'lnd65.ks' script is as follows:
+- 'solpan' - Solar panels to be extended/retracted, manually in the 'switches' stack.
+
+See tooltips for more information.
+
+[back to TOC](#table-of-contents)
+
 #### gtrn.ks
 
 [back to TOC](#table-of-contents)
