@@ -409,6 +409,23 @@ Next:
 ### Extras
 
 #### g66.ks
+The 'g66.ks' script is designed for 'Rufus 1.0'-type craft. It uses a "helicopter" style of steering where movement is achieved and controlled by the tilt of the craft.  
+'Rufus 1.0' has two control points, a dock (for connection to the lander) and a command seat for the pilot.  
+For the script to work properly, control must be set up from the command seat.  
+
+#### NAME TAGS
+kOS name tagging for the 'g66.ks' script is as follows:
+- 'solpan' - Solar panels to be extended/retracted, either manually or automatically.
+- 'leng' - Main engines, in this case dubbed for gimbal control (lock).
+- 'wheel' - Wheels, for friction control.
+
+If laser distance meters are used:
+- 'lsrl' - Left laser Dist-o-meter
+- 'lsrm' - Middle laser Dist-o-meter
+- 'lsrr' - Right laser Dist-o-meter
+
+See tooltips for more information.
+
 
 #### lnd65.ks
 
