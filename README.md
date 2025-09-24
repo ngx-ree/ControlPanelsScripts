@@ -119,9 +119,9 @@ Before you begin working with scripts, set the parameters of your screen resolut
 Open the file in a text editor and find the following section:
 
 
-global currsets is lexicon(  
+`global currsets is lexicon(  
 "mainx",list(1920,"maximum x screen resolution"),  
-"mainy",list(1080,"maximum y screen resolution"),  
+"mainy",list(1080,"maximum y screen resolution"),  `
 
 
 Replace 1920 with your X screen resolution and 1080 with your Y screen resolution (if you know how to get actual resolution parameters directly in kOS, please let me know).
