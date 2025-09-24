@@ -50,15 +50,19 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  
 [EXAMPLES AND TOOLS](#examples-and-tools)
 
- - ['example.ks'](#exampleks) - Example flight with example vessel
+ - [example.ks](#exampleks) - Example flight with example vessel
 
- - ['getlogs.ks'](#getlogsks) - Receiving messages from another terminal
+ - [getlogs.ks](#getlogsks) - Receiving messages from another terminal
  
- - ['mkl.ks'](#mklks) - Copying scripts from Archive to ship's local volume
+ - [mkl.ks](#mklks) - Copying scripts from Archive to ship's local volume
  
- - ['newname.ks'](#newnameks) - Renaming ship and/or migrating configurations from old name to new name
+ - [newname.ks](#newnameks) - Renaming ship and/or migrating configurations from old name to new name
  
  - [Extras](#extras) - Scripts already usable in KSP gameplay
+   - [g66.ks](#g66ks) - xxx
+   - [lnd65.ks](#lnd65ks) - xxx
+   - [ht3.ks](#ht3ks) - xxx
+   - [gtrn.ks](#gtrnks) - xxx
  
 
 
@@ -413,7 +417,7 @@ The 'g66.ks' script is designed for 'Rufus 1.0'-type craft. It uses a "helicopte
 'Rufus 1.0' has two control points, a dock (for connection to the lander) and a command seat for the pilot.  
 For the script to work properly, control must be set up from the command seat.  
 
-#### NAME TAGS
+##### NAME TAGS
 kOS name tagging for the 'g66.ks' script is as follows:
 - 'solpan' - Solar panels to be extended/retracted, either manually or automatically.
 - 'leng' - Main engines, in this case dubbed for gimbal control (lock).
