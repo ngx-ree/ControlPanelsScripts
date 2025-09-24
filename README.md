@@ -118,11 +118,11 @@ boot - Standard kOS subdirectory containing scripts loaded on boot. The CP scrip
 Before you begin working with scripts, set the parameters of your screen resolution in the 'etc/settings.lib.ks' file. This is necessary for the initial GUI positions to be placed correctly.  
 Open the file in a text editor and find the following section:
 
-
-`global currsets is lexicon(  
-"mainx",list(1920,"maximum x screen resolution"),  
-"mainy",list(1080,"maximum y screen resolution"),  `
-
+```
+global currsets is lexicon(
+"mainx",list(1920,"maximum x screen resolution"),
+"mainy",list(1080,"maximum y screen resolution"),
+```
 
 Replace 1920 with your X screen resolution and 1080 with your Y screen resolution (if you know how to get actual resolution parameters directly in kOS, please let me know).
 CP scripts use the global settings lexicon 'currsets' (current settings) defined in the 'settings.lib.ks' library. It contains the initial screen positions (some of them computed relative to other 'currsets' settings, e.g., the screen's X and Y resolutions), box styles, terminal window width and height, some default colors, and some other default values.
