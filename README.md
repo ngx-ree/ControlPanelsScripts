@@ -202,7 +202,7 @@ kOS name tagging on the 'Elisa 1.0' vessel is as follows:
 
 #### 2. OPEN TERMINAL(S)
 - Open both terminal windows (`ex#1` and `ex#2`). Action group 0 has a toggle set on both of them, so you can press 0 to open/close them. NOTE that `ex#2` will open on top of `ex#1`, so move it with the mouse.
-- Make sure both terminals are switched to the archive filesystem. Run the `list.` command to see its content. The listing must contain `etc` and 'lib' subdirectories, as well as `example.ks` script. This example uses the `boot/archive.ks` boot script, so both terminals should already be on the archive. To run scripts from the vessel's local filesystem, scripts and libraries must be copied from the archive. The best way is to use the `mkl.ks` script to copy them automatically along with all related configuration files and subdirectories (see description of `mkl.ks` usage [below](#mklks)).  
+- Make sure both terminals are switched to the archive filesystem. Run the `list.` command to see its content. The listing must contain `etc` and `lib` subdirectories, as well as `example.ks` script. This example uses the `boot/archive.ks` boot script, so both terminals should already be on the archive. To run scripts from the vessel's local filesystem, scripts and libraries must be copied from the archive. The best way is to use the `mkl.ks` script to copy them automatically along with all related configuration files and subdirectories (see description of `mkl.ks` usage [below](#mklks)).  
 For this example test, we will run everything from the archive. The 'Elisa 1.0' vessel is equipped with a basic omnidirectional antenna, so the archive volume will be available at the KSC launchpad.
 
 #### 3. RUN THE SCRIPT
@@ -296,31 +296,31 @@ On the `switches` stack of the 'Probe Control' multipanel there are the followin
 - 'Land when low on fuel' option controls automatic landing initiation when the vessel's fuel amount goes under a certain value (5% by default, this can be changed either in the 'Input Parameters' or in the `machinery settings`).
 - `Autom. gear` option controls automatic gear retract/extend functionality for hovering/ascending (does not work for descending with `Asc./Desc.`) at a certain height. Height values for both retract and extend can be changed either in the 'Input Parameters' or in the `machinery settings`. Changing the option is effective BEFORE hovering/ascending is initiated.
 - `Terminal logs` option controls sending logs ('statmsg' command defined in the `settings.lib.ks` library) to another kOS terminal window. The target window must be selected in the popup selector next to the checkbox. The target terminal must be running the `getlogs.ks` script to display messages.
-The 'Ext./Retr. Solar Panels' button toggles solar panels. These panels must be dubbed `solpan` and must have extend/retract capability of course.
+The `Ext./Retr. Solar Panels` button toggles solar panels. These panels must be dubbed `solpan` and must have extend/retract capability of course.
 
 ##### Probe Machinery - changing input parameter values
-Press the `Probe Machinery` button on the basic Control Panel. Select `machinery settings` from the popup selector. This stack contains values of variables set up on the 'Input Parameters' pane. You can change them during the flight with immediate effect. Press the tooltip button ('?') to see their descriptions. Tooltips are linked to descriptions on the 'Input Parameters' lexicon, so if you change them there, they will show new descriptions here as well.
+Press the `Probe Machinery` button on the basic Control Panel. Select `machinery settings` from the popup selector. This stack contains values of variables set up on the 'Input Parameters' pane. You can change them during the flight with immediate effect. Press the tooltip button (`?`) to see their descriptions. Tooltips are linked to descriptions on the 'Input Parameters' lexicon, so if you change them there, they will show new descriptions here as well.
 
 ##### IPU - instructions per update
-IPU settings can be changed in KSP's kOS settings, but if you need to change them on the fly during the flight, press the button whose description starts with 'IPU:' on the top of the basic Control Panel (the number following ':' is the current IPU value). Pressing the button shows the 'IPU' minipanel above the Control Panel with the same functionality as described for `Vert. velocity` above.
+IPU settings can be changed in KSP's kOS settings, but if you need to change them on the fly during the flight, press the button whose description starts with `IPU:` on the top of the basic Control Panel (the number following ':' is the current IPU value). Pressing the button shows the `IPU` minipanel above the Control Panel with the same functionality as described for `Vert. velocity` above.
 Note that very low IPU makes script-controlled flight very unstable.
 
 ##### GUI positions - configuring GUI screen position saving
-CP scripts save the last GUI positions and selections after the correct exit. Pressing the 'GUI pos.' button on the top of the basic Control Panel shows a minipanel which allows selecting/deselecting the 'Save on Exit' option, saving current positions with the 'Save Positions' button (this will automatically deselect the 'Save on Exit' option so that positions are not overwritten on exit) and deleting saved positions with the 'Delete Positions' button (this will revert GUI positions to the default settings and, of course, it also deselects the 'Save on Exit' option).
+CP scripts save the last GUI positions and selections after the correct exit. Pressing the `GUI pos.` button on the top of the basic Control Panel shows a minipanel which allows selecting/deselecting the `Save on Exit` option, saving current positions with the `Save Positions` button (this will automatically deselect the `Save on Exit` option so that positions are not overwritten on exit) and deleting saved positions with the `Delete Positions` button (this will revert GUI positions to the default settings and, of course, it also deselects the `Save on Exit` option).
 
 ##### Terminal output - show or hide data printed in terminal windows
-The control panel contains buttons 'Terminal Data', 'Verbose' and 'Debug' which allow various output to be printed in the terminal window running the `example.ks` script.
-- 'Terminal Data' button turns on/off all terminal data output with the exception of the first line ('OPCODESLEFT' shows how many instructions are available in addition to the already executed instructions - the more the smoother the script runs, 'curtime' shows the number of seconds from the script's start, 'loop' shows how many seconds the script's main loop took - the smaller the smoother). Turning terminal output off helps with performance when the script is very demanding.
-- 'Verbose' button shows additional data that are not normally needed during the flight.
-- 'Debug' button shows even more data, usually needed for debugging purposes.
-Both 'Verbose' and 'Debug' buttons have no effect when 'Terminal Data' is off.
-See the script's code for information on how this data is displayed. The displaying section is placed at the end of the main loop (the 'until scriptend {...}' section).
+The control panel contains buttons `Terminal Data`, `Verbose` and `Debug` which allow various output to be printed in the terminal window running the `example.ks` script.
+- `Terminal Data` button turns on/off all terminal data output with the exception of the first line (`OPCODESLEFT` shows how many instructions are available in addition to the already executed instructions - the more the smoother the script runs, `curtime` shows the number of seconds from the script's start, `loop` shows how many seconds the script's main loop took - the smaller the smoother). Turning terminal output off helps with performance when the script is very demanding.
+- `Verbose` button shows additional data that are not normally needed during the flight.
+- `Debug` button shows even more data, usually needed for debugging purposes.
+Both `Verbose` and `Debug` buttons have no effect when `Terminal Data` is off.
+See the script's code for information on how this data is displayed. The displaying section is placed at the end of the main loop (the `until scriptend {...}` section).
 
 [back to TOC](#table-of-contents)
 
 ### getlogs.ks
-Script `getlogs.ks` is a simple tool which serves to receive and display messages from other kOS terminals. Messages to be displayed are sent by the kOS command 'processor(cpu)connection:sendmessage(msg)', and CP scripts have already implemented a means to simplify that.
-The script has only a basic control panel with a single functional button 'Clear Screen' which does exactly what it says.
+Script `getlogs.ks` is a simple tool which serves to receive and display messages from other kOS terminals. Messages to be displayed are sent by the kOS command `processor(cpu)connection:sendmessage(msg)`, and CP scripts have already implemented a means to simplify that (function `statmsg(message)`).
+The script has only a basic control panel with a single functional button `Clear Screen` which does exactly what it says.
 
 [back to TOC](#table-of-contents)
 
@@ -328,7 +328,7 @@ The script has only a basic control panel with a single functional button 'Clear
 Script `mkl.ks` (make locals) is a simple GUI-based file manager for copying scripts and related files from the kOS archive to the vessel's local volume. It scans the kOS `Script` directory for *.ks files and displays them on a GUI pane, where they can be selected/deselected by checkboxes.  
 Selected files can then be copied to the vessel's local filesystem. Libraries and related settings are copied automatically.
 
-The subdirectory 'lib' is always copied with all CP libraries. Filenames of CP libraries are listed in the 'cplibs' list, declared at the beginning of the `mkl.ks` script. This ensures omitting any other files occasionally present in the 'lib' directory (for example, if the user used the 'lib' directory before installation of CP scripts). If a newly developed user library should be copied to local volumes as well, its filename must be added to the 'cplibs' list.
+The subdirectory `lib` is always copied with all CP libraries. Filenames of CP libraries are listed in the `cplibs` list, declared at the beginning of the `mkl.ks` script. This ensures omitting any other files occasionally present in the `lib` directory (for example, if the user used the `lib` directory before installation of CP scripts). If a newly developed user library should be copied to local volumes as well, its filename must be added to the `cplibs` list.
 
 The subdirectory `etc` is copied only with configuration subdirectories and files related to the given script(s) and vessel.
 
@@ -336,51 +336,51 @@ If the vessel has more than one kOS processor, the `mkl.ks` script can see all o
 
 The script also allows saving/loading various selections under named presets.  
 Presets can contain short descriptions for each script, in addition to selections. Descriptions are also shown as tooltips when hovering over the script's labels. This is useful especially for descriptions longer than the related textfield.  
-The `mkl.ks` script looks for the 'last' preset when it starts. That preset can be created as some "quicksave" by clicking the 'Save last selection' button. If the 'last' preset is not present, the `mkl.ks` script looks for the 'default' preset (and creates it if it does not exist).
+The `mkl.ks` script looks for the 'last' preset when it starts. That preset can be created as some "quicksave" by clicking the `Save last selection` button. If the 'last' preset is not present, the `mkl.ks` script looks for the 'default' preset (and creates it if it does not exist).
 
 Since the `mkl.ks` script is not ship-specific, it does not create any subdirectory in the `etc` directory and has its settings (like saved presets) directly in the `etc` directory instead.
 
 `mkl.ks` multipanel contains two stacks:  
 
-'make local files' - controls file operations between the kOS archive and the vessel's local volumes.  
+`make local files` - controls file operations between the kOS archive and the vessel's local volumes.  
 - The first section provides means for save/load operations of selection presets.  
 - The second section contains copy options for particular subdirectories and settings files. See tooltips for more info.  
 - The next section shows a (paginated) list of .ks files present on the kOS archive volume with selection checkboxes and description editing textfields. The next section shows a (paginated) list of .ks files present on the kOS archive volume with selection checkboxes and description editing textfields. Note that the `mkl.ks` script itself is omitted as it makes no sense to copy it to local volume(s).
-- The last section contains functional buttons for particular file operations. The volume popup selector offers to select any of the ship's available volumes as a target for copy operations. The 'Save last selection' button provides a "quicksave" for the 'last' preset (automatically loaded on script start). See tooltips for information about other button functions.
+- The last section contains functional buttons for particular file operations. The volume popup selector offers to select any of the ship's available volumes as a target for copy operations. The `Save last selection` button provides a "quicksave" for the 'last' preset (automatically loaded on script start). See tooltips for information about other button functions.
 
-'settings' - allows operations with settings files.  
-- The first section allows construction of the settings file path. The 'ship ID' and 'ship directory' fields are pre-filled with the current ship's data (can be edited, but you must know what you are doing). The 'settings file' selector offers all three settings file types. The 'script ID' field needs to be edited for a given script whose settings will be created/edited.  
-- The second section (filename:) shows the current settings file path.  
+`settings` - allows operations with settings files.  
+- The first section allows construction of the settings file path. The `ship ID` and `ship directory` fields are pre-filled with the current ship's data (can be edited, but you must know what you are doing). The `settings file` selector offers all three settings file types. The `script ID` field needs to be edited for a given script whose settings will be created/edited.  
+- The second section (`filename:`) shows the current settings file path.  
 - The next section provides means to display, edit, add or delete particular settings items, as well as saving and deleting the settings file itself.  
-The 'settings' stack of the script is still in BETA.
+The `settings` stack of the script is still in BETA.
 
 Script usage example and description:
 
 - Launch the 'Elisa 1.0' vessel.
 - Open the terminal window of the `ex#1` kOS CPU and make sure you are on the archive volume.
-- Run the 'run mkl.' command. The script's GUI opens. This script does not use a basic control panel, just one multipanel with two stacks.
-- Toggle the tooltips ('?') button in the top right corner for more detailed information about particular functional elements when needed.
-- Click the popup menu selector to select the 'make local files' stack, if not already selected.
+- Run the `run mkl.` command. The script's GUI opens. This script does not use a basic control panel, just one multipanel with two stacks.
+- Toggle the tooltips (`?`) button in the top right corner for more detailed information about particular functional elements when needed.
+- Click the popup menu selector to select the `make local files` stack, if not already selected.
 - Use the popup selector (first item in the line right below the scripts list) to select the `ex#1` volume. Since the `mkl.ks` script was started from the `ex#1` volume, it should already be selected.
-- Click the 'Show ex#1' button. The contents of the `ex#1` volume are recursively listed in the `ex#1` terminal window. Most probably it will show nothing but the 'boot' directory and its contents.
-- Click the 'Clear terminal screen' button. This will perform the 'clearscreen' command on the `ex#1` terminal window.
-- Click the 'Show Archive' button. The content of the archive volume are recursively listed in the `ex#1` terminal window. If the list length exceeds the window height (actually about 80% of it), the listing will stop and wait for a keypress.
+- Click the `Show ex#1` button. The contents of the `ex#1` volume are recursively listed in the `ex#1` terminal window. Most probably it will show nothing but the `boot` directory and its contents.
+- Click the `Clear terminal screen` button. This will perform the `clearscreen` command on the `ex#1` terminal window.
+- Click the `Show Archive` button. The content of the archive volume are recursively listed in the `ex#1` terminal window. If the list length exceeds the window height (actually about 80% of it), the listing will stop and wait for a keypress.
 
 IMPORTANT: To continue (or quit) listing by pressing a key, the terminal window must be active, which means it must be selected. While waiting for a keypress, the `mkl.ks` GUI will not respond, although some clicks are cached.
 
 - Clear the terminal window again.
 - Select the checkboxes next to the `example.ks` and `newname.ks` labels. This selects the given scripts for copying.
-- Make sure the 'Copy etc' and 'Copy lib' options are selected.
-- Click the 'Copy to ex#1' button and confirm the action (copying always deletes the destination volume, except for the 'boot' subdirectory. The `etc` subdirectory can also be preserved if the 'Clear etc' option is unchecked). The copy process is displayed in the `ex#1` terminal window. If the operation is successful, the last line shows DONE. If it has failed for some reason, it shows FAILED.
+- Make sure the `Copy etc` and `Copy lib` options are selected.
+- Click the `Copy to ex#1` button and confirm the action (copying always deletes the destination volume, except for the `boot` subdirectory. The `etc` subdirectory can also be preserved if the `Clear etc` option is unchecked). The copy process is displayed in the `ex#1` terminal window. If the operation is successful, the last line shows 'DONE'. If it has failed for some reason, it shows 'FAILED'.
 - Clear the terminal window again.
-- Clicking the 'Show ex#1' button lists the `ex#1` volume. It shows scripts and related files copied by the previous action.
+- Clicking the `Show ex#1` button lists the `ex#1` volume. It shows scripts and related files copied by the previous action.
 - Use the volume selector to select the `ex#2` volume.
-- Click the 'Uncheck' button (the line above the scripts list) to clear the current script selection.
+- Click the `Uncheck` button (the line above the scripts list) to clear the current script selection.
 - Select the `getlogs.ks` script.
-- Click the 'Copy to ex#2' button to copy `getlogs.ks` to the `ex#2` volume. Note that action button labels are updated whenever a volume is selected to reflect the currently selected item.
+- Click the `Copy to ex#2` button to copy `getlogs.ks` to the `ex#2` volume. Note that action button labels are updated whenever a volume is selected to reflect the currently selected item.
 - The `ex#2` volume now has the `getlogs.ks` script and can be used for log reception from scripts running on `ex#1`.
 - Select the `ex#1` volume again.
-- Click the 'Switch to ex#1 and quit' button. The `mkl.ks` script exits and the terminal is switched from the archive to the local `ex#1` volume.
+- Click the `Switch to ex#1 and quit` button. The `mkl.ks` script exits and the terminal is switched from the archive to the local `ex#1` volume.
 
 [back to TOC](#table-of-contents)
 
@@ -397,10 +397,10 @@ The main function is to migrate the ship's old configuration directory and files
 The usage is as follows:
 
 If the ship's name was changed (by any KSP action) and you want to update (migrate) configurations:  
-- Run the 'run newname' command.
+- Run the `run newname.` command.
 
 If you want to change your ship's name and update configurations in a single step:  
-- Run 'run newname("ship-name")', where 'ship-name' is the ship's new name.
+- Run `run newname("ship-name").`, where `ship-name` is the ship's new name.
 
 Next:  
 - If there is a single configuration directory (normal local volume state, a single ship should have a single configuration directory), `newname.ks` automatically selects this directory for migration.
@@ -416,22 +416,22 @@ Extras are CP scripts which I use in my KSP gameplay and are in a relatively rea
 Their usage is not extensively described; see tooltips for more info about particular functions. Keep in mind that some functions are still experimental.
 
 #### g66.ks
-The 'g66.ks' script is designed for 'Rufus 1.0'-type craft. It uses a "helicopter" style of steering where movement is achieved and controlled by the tilt of the craft.  
+The `g66.ks` script is designed for 'Rufus 1.0'-type craft. It uses a "helicopter" style of steering where movement is achieved and controlled by the tilt of the craft.  
 'Rufus 1.0' has two control points, a dock (for connection to the lander) and a command seat for the pilot.  
 For the script to work properly, control must be set up from the command seat.  
 
-The Mun is the best place to test 'g66.ks' with 'Rufus 1.0'. You can get there with the 'Munica 1.0' rocket, or you can simply cheat it by Alt+F12 -> Cheats -> Set Position to save time.
+The Mun is the best place to test `g66.ks` with 'Rufus 1.0'. You can get there with the 'Munica 1.0' rocket, or you can simply cheat it by Alt+F12 -> Cheats -> Set Position to save time.
 
 ##### NAME TAGS
-kOS name tagging for the 'g66.ks' script is as follows:
+kOS name tagging for the `g66.ks` script is as follows:
 - `solpan` - Solar panels to be extended/retracted, either manually or automatically.
 - `leng` - Main engines, in this case dubbed for gimbal control (lock).
-- 'wheel' - Wheels, for friction control.
+- `wheel` - Wheels, for friction control.
 
 If laser distance meters are used:
-- 'lsrl' - Left laser Dist-o-meter
-- 'lsrm' - Middle laser Dist-o-meter
-- 'lsrr' - Right laser Dist-o-meter
+- `lsrl` - Left laser Dist-o-meter
+- `lsrm` - Middle laser Dist-o-meter
+- `lsrr` - Right laser Dist-o-meter
 
 See tooltips for more information.
 
@@ -443,13 +443,13 @@ This is simpler script for the landing procedure. The vessel's control point mus
 
 The landing process is active only if the vessel's vertical velocity is negative (it is descending/falling) and the pilot throttle is 0. This means you can control the vehicle by manually throttling up and return to automatic landing by setting the throttle down to 0. In practice, if you land on a spot you don't like, don't exit the script, just throttle up and fly away a bit. Then throttle down to 0 and let the vehicle land. Of course, this assumes you have enough fuel and sufficient height.
 
-The landing process can also be suspended manually with the 'Suspend' button.
+The landing process can also be suspended manually with the `Suspend` button.
 
 ##### NAME TAGS
 kOS name tagging for the 'lnd65.ks' script is as follows:
 - `solpan` - Solar panels to be extended/retracted, manually in the `switches` stack.
 - `leng` - Main engine(s) used for landing. This dubbing is mandatory for the script to work.
-- 'wheel' - Wheels (if present), for friction control.
+- `wheel` - Wheels (if present), for friction control.
 
 See tooltips for more information.
 
@@ -457,7 +457,7 @@ See tooltips for more information.
 
 #### ht3.ks
 
-Script 'ht3.ks' (hold target) is most useful in rendezvous (undocked) situations, where it secures a constant distance between the vessel and its target (e.g., the second vessel). For example, if you go EVA from your rocket to fix an orbital telescope, you can run this script on your ship with the telescope as a target and you don't have to worry it will drift away.
+Script `ht3.ks` (hold target) is most useful in rendezvous (undocked) situations, where it secures a constant distance between the vessel and its target (e.g., the second vessel). For example, if you go EVA from your rocket to fix an orbital telescope, you can run this script on your ship with the telescope as a target and you don't have to worry it will drift away.
 
 The script also has elements to control translation and rotation of the vehicle for some position fine-tuning.
 
