@@ -121,10 +121,10 @@ Open the file in a text editor and find the following section:
 ```
 global currsets is lexicon(
 "mainx",list(1920,"maximum x screen resolution"),
-"mainy",list(1080,"maximum y screen resolution"),
+"mainy",list(1200,"maximum y screen resolution"),
 ```
 
-Replace 1920 with your X screen resolution and 1080 with your Y screen resolution (if you know how to get actual resolution parameters directly in kOS, please let me know).
+Replace `1920` with your X screen resolution and `1200` with your Y screen resolution (if you know how to get actual resolution parameters directly in kOS, please let me know).
 CP scripts use the global settings lexicon 'currsets' (current settings) defined in the 'settings.lib.ks' library. It contains the initial screen positions (some of them computed relative to other 'currsets' settings, e.g., the screen's X and Y resolutions), box styles, terminal window width and height, some default colors, and some other default values.
 Settings are either read from this lexicon (in the 'settings.lib.ks' library), or can be overridden by a *_settings.json file. This is still experimental, so all you need for now is the 'settings.lib.ks' library and you don't need to worry about it (besides the initial setting of screen resolution, as described above).
 
