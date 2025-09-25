@@ -446,7 +446,7 @@ The landing process is active only if the vessel's vertical velocity is negative
 The landing process can also be suspended manually with the `Suspend` button.
 
 ##### NAME TAGS
-kOS name tagging for the 'lnd65.ks' script is as follows:
+kOS name tagging for the `lnd65.ks` script is as follows:
 - 'solpan' - Solar panels to be extended/retracted, manually in the `switches` stack.
 - 'leng' - Main engine(s) used for landing. This dubbing is mandatory for the script to work.
 - 'wheel' - Wheels (if present), for friction control.
@@ -464,7 +464,7 @@ The script also has elements to control translation and rotation of the vehicle 
 The script supports switching between targets. If no target is selected, it exits immediately.
 
 NAME TAGS
-kOS name tagging for the 'lnd65.ks' script is as follows:
+kOS name tagging for the `ht3.ks` script is as follows:
 - 'solpan' - Solar panels to be extended/retracted, manually in the `switches` stack.
 
 See tooltips for more information.
@@ -472,6 +472,22 @@ See tooltips for more information.
 [back to TOC](#table-of-contents)
 
 #### gtrn.ks
+
+Script `gtrn.ks` provides gravity turn and other functions for rockets launched to orbit. It is designed to take care of the flight from launch until circularization. There is also a function for quite crude reentry planning to reach KSC (try changing the geo offset if you land too far).  
+Staging is semi-automatic. It relies on a zero delta-v value for the given stage, so it does not work for stages with combined engines. In that case, staging must be done manually.
+
+Of course, the control direction must be upwards.
+
+To launch the rocket, first press the `Engage` button, then stage (or check the `auto stage` checkbox).
+
+NAME TAGS
+kOS name tagging for the `gtrn.ks` script is as follows:
+- 'solpan' - Solar panels to be extended/retracted, manually in the 'switches' stack.
+- 'leng' - Main engine(s), in this case dubbed for gimbal control.
+- 'fairing' - Payload fairing, tagged for automatic deployment
+- `Tpart` - This is a variable containing the kOS tag of the part, which can provide temperature readings (e.g., 'fairing'). It is used to reduce the thrust when overheating and its value is set up in the 'Input Parameters' pane (or in 'Rocket Machinery'). The "Critical Temperature Gauge" mod is needed for this functionality to work.
+
+See tooltips for more information.
 
 [back to TOC](#table-of-contents)
 
