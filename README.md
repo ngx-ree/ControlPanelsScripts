@@ -480,6 +480,8 @@ Of course, the control direction must be upwards.
 
 To launch the rocket, first press the `Engage` button, then stage (or check the `auto stage` checkbox).
 
+The script does NOT use automatic warp (yet).
+
 NAME TAGS
 kOS name tagging for the `gtrn.ks` script is as follows:
 - 'solpan' - Solar panels to be extended/retracted, manually in the 'switches' stack.
