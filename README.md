@@ -91,12 +91,12 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
 ### Scripts installation
 
-Simply unpack ControlPanelScripts.zip into the kOS archive directory, usually [KSP installation folder]/Ships/Script/. It is also a good idea to back up your `Script` directory beforehand, just to be sure.  
+Simply unpack `ControlPanelScripts.zip` into the kOS archive directory, usually `[KSP installation folder]/Ships/Script/`. It is also a good idea to back up your `Script` directory beforehand, just to be sure.  
 There should be no file collisions, but in the very improbable case you have some of your scripts named the same as some of the CP scripts, rename the problematic CP script, but DO CHANGE the variable `scriptid` at the beginning of the script accordingly (see Script ID below).
 
 ### Ships installation
 
-Unpack CPShips.zip or CPShips_noLaser.zip into your save's VAB Ships directory. This package contains example vessels to work with included example scripts. All vessels were created without any other parts mods than kOS and LaserDist. Vessels in CPShips_noLaser.zip are variants without LaserDist mod parts.
+Unpack `CPShips.zip` or `CPShips_noLaser.zip` into your save's VAB Ships directory. This package contains example vessels to work with included example scripts. All vessels were created without any other parts mods than kOS and LaserDist. Vessels in `CPShips_noLaser.zip` are variants without LaserDist mod parts.
 
 ### Directory structure
 
