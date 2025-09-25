@@ -162,7 +162,7 @@ Losing some part during the flight (e.g., after bumping into something) can caus
 
 ### Development considerations
 Some library functions rely on the presence of global variables in main script, so do pay attention to the naming of your own global variable identifiers. Always check if they are not already present and used in some of the libraries. If you use an existing variable identifier in global context, script(s) may not work as intended. Of course, you can use library global variables for your purposes. For example, `screen.lib.ks` uses `on` triggers for checking RCS and SAS status change to toggle 'RCS' and 'SAS' buttons if defined, presuming they are created as global variables named `rcsbtn` and `sasbtn` respectively.  
-For example, you can use the Notepad++ 'Find in Files' function with descent into subdirectories to check for the presence of variables. Check used library function comments (and code) for more information.
+For example, you can use the Notepad++ 'Find in Files' function with descent into subdirectories to check for the presence of variables. Check used library function comments (and code itself) for more information.
 
 kOS remembers some variables set within the script after it ends. This can mislead you when you change your code and re-run the script. Certain variables can seem to be defined and the script will not crash due to their non-existence (referring to a variable before it was created). The safest (but also annoying) way to avoid this is to reboot the kOS terminal (with the `reboot.` command), so do it from time to time to check if all variable declarations are in order (if you know a better way please let me know. I know there is the `unset` command, but unsetting all variables one by one is not really a good way).
 
@@ -420,7 +420,7 @@ The `g66.ks` script is designed for 'Rufus 1.0'-type craft. It uses a "helicopte
 'Rufus 1.0' has two control points, a dock (for connection to the lander) and a command seat for the pilot.  
 For the script to work properly, control must be set up from the command seat.  
 
-The Mun is the best place to test `g66.ks` with 'Rufus 1.0'. You can get there with the 'Munica 1.0' rocket, or you can simply cheat it by Alt+F12 -> Cheats -> Set Position to save time.
+The Mun is the best place to test `g66.ks` with 'Rufus 1.0'. You can get there (and back) with the 'Munica 1.0' rocket, or you can simply cheat it by Alt+F12 -> Cheats -> Set Position to save time.
 
 ##### NAME TAGS
 kOS name tagging for the `g66.ks` script is as follows:
