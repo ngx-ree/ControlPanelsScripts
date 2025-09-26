@@ -450,7 +450,7 @@ See tooltips for more information.
 
 #### lnd65.ks
 
-Video: https://youtu.be/ofdBmzOd3yQ
+Video: https://youtu.be/ofdBmzOd3yQ  
 Video: https://youtu.be/Llo3L24wVLc (Actually, the script was not designed for the full descent procedure, just for the final phase, but it works sometimes anyway...)
 
 This is simpler script for the landing procedure. The vessel's control point must be facing upwards (like a rocket). For example, if you want to use it with 'Rufus 1.0', it must be controlled from the docking port.
