@@ -97,13 +97,13 @@ There should be no file collisions, but in the very improbable case you have som
 
 Directory structure of CP scripts adds two subdirectories to the kOS default directory:
 
-lib - Subdirectory containing libraries which are included by `runoncepath` commands in main scripts.
+`lib` - Subdirectory containing libraries which are included by `runoncepath` commands in main scripts.
 
-etc - Subdirectory for saved settings and presets. By default, for each vessel running CP scripts, its own subdirectory in `etc` is created named by the vessel's name.
+`etc` - Subdirectory for saved settings and presets. By default, for each vessel running CP scripts, its own subdirectory in `etc` is created named by the vessel's name.
 
-etc/templates - Contains templates for each script which will be used to create the initial `*PID.include.ks` file after the script's first start (the template is simply copied to the ship's subdirectory as a file with a given name following the ship-script naming convention).
+`etc/templates` - Contains templates for each script which will be used to create the initial `*PID.include.ks` file after the script's first start (the template is simply copied to the ship's subdirectory as a file with a given name following the ship-script naming convention).
 
-boot - Standard kOS subdirectory containing scripts loaded on boot. The CP scripts package contains script 'archive.ks' which (when set as boot file) switches the terminal to archive filesystem after launch or switching to a given vessel. Its usage is optional, according to your preferences.
+`boot` - Standard kOS subdirectory containing scripts loaded on boot. The CP scripts package contains script 'archive.ks' which (when set as boot file) switches the terminal to archive filesystem after launch or switching to a given vessel. Its usage is optional, according to your preferences.
 
 
 ### Ships installation
