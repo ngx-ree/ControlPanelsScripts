@@ -169,6 +169,8 @@ For example, you can use the Notepad++ 'Find in Files' function with descent int
 
 kOS remembers some variables set within the script after it ends. This can mislead you when you change your code and re-run the script. Certain variables can seem to be defined and the script will not crash due to their non-existence (referring to a variable before it was created). The safest (but also annoying) way to avoid this is to reboot the kOS terminal (with the `reboot.` command), so do it from time to time to check if all variable declarations are in order (if you know a better way please let me know. I know there is the `unset` command, but unsetting all variables one by one is not really a good way).
 
+If you change your 'input_data' lexicon in your script, don't forget to delete the `*inDefs.save.default.json' file in your ship's configuration directory. This file is created automatically and loaded at the script start, which would override new values in the changed 'input_data' lexicon.
+
 [back to TOC](#table-of-contents)
 
 ## EXAMPLES AND TOOLS
