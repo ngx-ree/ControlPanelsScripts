@@ -175,7 +175,8 @@ kOS remembers some variables set within the script after it ends. This can misle
 ### example.ks
 Script `example.ks` briefly demonstrates typical CP script functionality and behavior. Its functions are described and commented within the code. It is designed to run with the 'Elisa 1.0' vessel and can serve as a template or a base for developing your own scripts. Comments in `example.ks` code focus on GUI elements mainly, not particularly on the flight's functionality (although there are some).
 
-Example scenario below serves to help you get oriented with the script's typical usage (see also video):  XXXX  
+Example scenario below serves to help you get oriented with the script's typical usage.  
+See video [here](https://youtu.be/rCYHRaqUNvQ).
 
 Although I think you would figure out the script's behavior and usage just by watching the video and/or reading tooltips (revealed by toggling the `?` button and hovering the mouse cursor over a given control element), it's worth testing it step-by-step as described below, at least for the first time you try the script. It will help you understand how CP scripts work before you start making your own.
 
