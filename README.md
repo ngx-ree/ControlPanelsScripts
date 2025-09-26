@@ -143,8 +143,8 @@ When placing kOS processors on your vessel, use full HDD sizes for kOS CPUs. The
 ### Script ID
 Each script must have its `scriptid` variable set to the script's name (without .ks extension). The `scriptid` variable is crucial for file operations (configurations, settings, saves and loads) to work correctly.
 
-### Templates
-If no template for a given script exists in the `etc/templates` subdirectory, the script creates an empty include file in the ship's configuration subdirectory. This file must be manually edited before it works.
+### Templates and include files
+If no template for a given script exists in the 'etc/templates' subdirectory, the script creates an empty include file in the ship's configuration subdirectory. This file must be manually edited before it works. If the script was run on the ship's local volume, obviously, this file is created on that local volume. Then, it must either be edited with the kOS editor ('edit filename.' command) or copied to the archive (or created under the same name), edited in any text editor and copied back to the local volume. To avoid this hassle, it is good to make sure at least the template is always present for a given script.
 
 ### Local ship files handling
 `mkl.ks` script  
@@ -421,7 +421,12 @@ Next:
 Extras are CP scripts which I use in my KSP gameplay and are in a relatively ready state to be published. There can still be some bugs, but I tried to make sure none of them cause a script crash.  
 Their usage is not extensively described; see tooltips for more info about particular functions. Keep in mind that some functions are still experimental.
 
+In demonstration videos scripts are run directly from the archive, because no connectivity manager for kOS was used for this purpose. If you do use a connectivity manager, use 'mkl.ks' to copy scripts to local volumes and run them from there, to prevent loss of archive availability.
+
 #### g66.ks
+
+Video: https://youtu.be/f1AUAyBpHhQ
+
 The `g66.ks` script is designed for 'Rufus 1.0'-type craft. It uses a "helicopter" style of steering where movement is achieved and controlled by the tilt of the craft.  
 'Rufus 1.0' has two control points, a dock (for connection to the lander) and a command seat for the pilot.  
 For the script to work properly, control must be set up from the command seat.  
@@ -445,6 +450,9 @@ See tooltips for more information.
 
 #### lnd65.ks
 
+Video: https://youtu.be/ofdBmzOd3yQ
+Video: https://youtu.be/Llo3L24wVLc (Actually, the script was not designed for the full descent procedure, just for the final phase, but it works sometimes anyway...)
+
 This is simpler script for the landing procedure. The vessel's control point must be facing upwards (like a rocket). For example, if you want to use it with 'Rufus 1.0', it must be controlled from the docking port.
 
 The landing process is active only if the vessel's vertical velocity is negative (it is descending/falling) and the pilot throttle is 0. This means you can control the vehicle by manually throttling up and return to automatic landing by setting the throttle down to 0. In practice, if you land on a spot you don't like, don't exit the script, just throttle up and fly away a bit. Then throttle down to 0 and let the vehicle land. Of course, this assumes you have enough fuel and sufficient height.
@@ -463,6 +471,8 @@ See tooltips for more information.
 
 #### ht3.ks
 
+Video: https://youtu.be/NoR-erH7154
+
 Script `ht3.ks` (hold target) is most useful in rendezvous (undocked) situations, where it secures a constant distance between the vessel and its target (e.g., the second vessel). For example, if you go EVA from your rocket to fix an orbital telescope, you can run this script on your ship with the telescope as a target and you don't have to worry it will drift away.
 
 The script also has elements to control translation and rotation of the vehicle for some position fine-tuning.
@@ -478,6 +488,8 @@ See tooltips for more information.
 [back to TOC](#table-of-contents)
 
 #### gtrn.ks
+
+Video: https://youtu.be/KNcqBPugePw
 
 Script `gtrn.ks` provides gravity turn and other functions for rockets launched to orbit. It is designed to take care of the flight from launch until circularization. There is also a function for quite crude reentry planning to reach KSC (try changing the geo offset if you land too far).  
 Staging is semi-automatic. It relies on a zero delta-v value for the given stage, so it does not work for stages with combined engines. In that case, staging must be done manually.
