@@ -22,41 +22,25 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 [SCRIPTS FEATURES](#scripts-features)
 
 [INSTALLATION](#installation)
-
  - [Scripts installation](#scripts-installation)
-
  - [Directory structure](#directory-structure)
- 
  - [Ships installation](#ships-installation)
- 
- [BEFORE YOU START](#before-you-start)
 
+ [BEFORE YOU START](#before-you-start)
  - [Set your screen resolution](#set-your-screen-resolution)
- 
  - [Instructions per update](#instructions-per-update)
- 
  - [kOS HDD sizes](#kos-hdd-sizes)
- 
  - [Script ID (`scriptid` variable)](#script-id)
- 
  - [Templates](#templates)
- 
  - [Local ship files handling](#local-ship-files-handling)
- 
  - [Usage considerations](#usage-considerations)
- 
  - [Development considerations](#development-considerations)
  
 [EXAMPLES AND TOOLS](#examples-and-tools)
-
  - [example.ks](#exampleks) - Example flight with example vessel
-
  - [getlogs.ks](#getlogsks) - Receiving messages from another terminal
- 
  - [mkl.ks](#mklks) - Copying scripts from Archive to ship`s local volume
- 
  - [newname.ks](#newnameks) - Renaming ship and/or migrating configurations from old name to new name
- 
  - [Extras](#extras) - Scripts already usable in KSP gameplay
    - [g66.ks](#g66ks) - "Helicopter" style controlled vessels
    - [lnd65.ks](#lnd65ks) - Simple automatic landing for rockets
