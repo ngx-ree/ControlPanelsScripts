@@ -59,10 +59,10 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  - [newname.ks](#newnameks) - Renaming ship and/or migrating configurations from old name to new name
  
  - [Extras](#extras) - Scripts already usable in KSP gameplay
-   - [g66.ks](#g66ks) - xxx
-   - [lnd65.ks](#lnd65ks) - xxx
-   - [ht3.ks](#ht3ks) - xxx
-   - [gtrn.ks](#gtrnks) - xxx
+   - [g66.ks](#g66ks) - "Helicopter" style controlled vessels
+   - [lnd65.ks](#lnd65ks) - Simple automatic landing for rockets
+   - [ht3.ks](#ht3ks) - Hold vessel's position for EVA missions
+   - [gtrn.ks](#gtrnks) - Launch to orbit assistant
  
 
 
