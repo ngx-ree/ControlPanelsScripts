@@ -24,13 +24,12 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 [INSTALLATION](#installation)
 
  - [Scripts installation](#scripts-installation)
+
+ - [Directory structure](#directory-structure)
  
  - [Ships installation](#ships-installation)
  
- - [Directory structure](#directory-structure)
-
- 
-[BEFORE YOU START](#before-you-start)
+ [BEFORE YOU START](#before-you-start)
 
  - [Set your screen resolution](#set-your-screen-resolution)
  
@@ -94,10 +93,6 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 Simply unpack `ControlPanelScripts.zip` into the kOS archive directory, usually `[KSP installation folder]/Ships/Script/`. It is also a good idea to back up your `Script` directory beforehand, just to be sure.  
 There should be no file collisions, but in the very improbable case you have some of your scripts named the same as some of the CP scripts, rename the problematic CP script, but DO CHANGE the variable `scriptid` at the beginning of the script accordingly (see Script ID below).
 
-### Ships installation
-
-Unpack `CPShips.zip` or `CPShips_noLaser.zip` into your save's VAB Ships directory. This package contains example vessels to work with included example scripts. All vessels were created without any other parts mods than kOS and LaserDist. Vessels in `CPShips_noLaser.zip` are variants without LaserDist mod parts.
-
 ### Directory structure
 
 Directory structure of CP scripts adds two subdirectories to the kOS default directory:
@@ -109,6 +104,12 @@ etc - Subdirectory for saved settings and presets. By default, for each vessel r
 etc/templates - Contains templates for each script which will be used to create the initial `*PID.include.ks` file after the script's first start (the template is simply copied to the ship's subdirectory as a file with a given name following the ship-script naming convention).
 
 boot - Standard kOS subdirectory containing scripts loaded on boot. The CP scripts package contains script 'archive.ks' which (when set as boot file) switches the terminal to archive filesystem after launch or switching to a given vessel. Its usage is optional, according to your preferences.
+
+
+### Ships installation
+
+Unpack `CPShips.zip` or `CPShips_noLaser.zip` into your save's VAB Ships directory. This package contains example vessels to work with included example scripts. All vessels were created without any other parts mods than kOS and LaserDist. Vessels in `CPShips_noLaser.zip` are variants without LaserDist mod parts.
+
 
 [back to TOC](#table-of-contents)
 
