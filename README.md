@@ -475,7 +475,7 @@ Video: https://youtu.be/NoR-erH7154
 
 Script `ht3.ks` (hold target) is most useful in rendezvous (undocked) situations, where it secures a constant distance between the vessel and its target (e.g., the second vessel). For example, if you go EVA from your rocket to fix an orbital telescope, you can run this script on your ship with the telescope as a target and you don't have to worry it will drift away.
 
-The script also has elements to control translation and rotation of the vehicle for some position fine-tuning.
+The script also has elements to control translation and rotation of the vehicle for some position fine-tuning. It normally uses a "raw" method for position holding (and movement) control, which means it adjusts controls based on the difference between the actual and desired coordinates. There is also an experimental method available, which uses PIDs, but I never succeeded in setting them correctly. However, the PIDs are there so you can experiment. PIDs for translation and rotation are prepared too, but they were never used (yet).
 
 The script supports switching between targets. If no target is selected, it exits immediately.
 
