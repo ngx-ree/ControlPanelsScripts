@@ -57,6 +57,7 @@ The kOS Control Panels Scripts are developed uunder KSP kOS and therefore are li
 - Basic Control Panel GUI, and more complex control multipanel GUIs with various controlling elements. These elements include combinations of buttons for easy increasing/decreasing of given values, popup menus to select various functionalities, textboxes for displaying messages and tooltips, etc. Complex panels can be minimized (hidden) and restored (shown again) to save screen space without affecting their operations, so the basic CP acts as a sort of task toolbar.
 
 - Minipanels - purpose-specific compact panels that can be invoked/revoked, for example, by a toggle-type button. Minipanels usually contain sets of small control elements and help reduce the number of controlling elements on main panels, keeping them clear and much easier to navigate.
+![screenshot](images/minipanel.jpg)
 
 - Mechanism for easy tooltips usage to maintain descriptions of individual functions and control elements.
 
