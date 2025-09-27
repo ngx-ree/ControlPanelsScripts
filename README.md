@@ -53,6 +53,7 @@ The kOS Control Panels Scripts are developed uunder KSP kOS and therefore are li
 
 ## SCRIPTS FEATURES
 - Graphical input parameters pane with pre-filled values. This pane is displayed on script start (unless inapplicable, like `getlogs.ks` or `mkl.ks`) and provides a means to enter and/or edit initial values for variables used within the functional parts of user scripts. The pane also provides the ability to save entered values as inputs automatically loaded at start, or even save various variants of inputs that can be easily selected and saved/loaded on script start.
+![screenshot](images/inputs.jpg)
 
 - Basic Control Panel GUI, and more complex control multipanel GUIs with various controlling elements. These elements include combinations of buttons for easy increasing/decreasing of given values, popup menus to select various functionalities, textboxes for displaying messages and tooltips, etc. Complex panels can be minimized (hidden) and restored (shown again) to save screen space without affecting their operations, so the basic CP acts as a sort of task toolbar.
 ![screenshot](images/multipanels.jpg)
@@ -61,10 +62,13 @@ The kOS Control Panels Scripts are developed uunder KSP kOS and therefore are li
 ![screenshot](images/minipanel.jpg)
 
 - Mechanism for easy tooltips usage to maintain descriptions of individual functions and control elements.
+![screenshot](images/tooltips.jpg)
 
 - A GUI-based tool for easily copying selected scripts and related files from the archive volume to the local ship volume(s).
+![screenshot](images/mkl.jpg)
 
 - PID parameters (and/or any other scalar variables if needed) control panels for displaying/editing said parameters in real time during the flight. Edited parameters can be saved under arbitrary preset names and loaded whenever needed during flight or automatically at script start. Save/Load mechanisms are mainly focused on (but not limited to) various parameter sets - for example, different PIDs for the same vessel on different planets, etc.
+![screenshot](images/PIDs.jpg)
 
 - PID parameters (or other stuff if needed) stored in a separate `*PID.include.ks` file named by script ID and ship name combination. This file is easy to edit (in contrast to .json preset files) and serves as the source for PID parameters for a given script and ship. The file is initially created (after the first script run on a given ship) from a template for the given script.
 
