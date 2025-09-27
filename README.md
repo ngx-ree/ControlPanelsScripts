@@ -60,6 +60,8 @@ The kOS Control Panels Scripts are developed uunder KSP kOS and therefore are li
 
 - Mechanism for easy tooltips usage to maintain descriptions of individual functions and control elements.
 
+- A GUI-based tool for easily copying selected scripts and related files from the archive volume to the local ship volume(s).
+
 - PID parameters (and/or any other scalar variables if needed) control panels for displaying/editing said parameters in real time during the flight. Edited parameters can be saved under arbitrary preset names and loaded whenever needed during flight or automatically at script start. Save/Load mechanisms are mainly focused on (but not limited to) various parameter sets - for example, different PIDs for the same vessel on different planets, etc.
 
 - PID parameters (or other stuff if needed) stored in a separate `*PID.include.ks` file named by script ID and ship name combination. This file is easy to edit (in contrast to .json preset files) and serves as the source for PID parameters for a given script and ship. The file is initially created (after the first script run on a given ship) from a template for the given script.
