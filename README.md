@@ -18,8 +18,7 @@ An optional mod is Dunbaratu’s LaserDist, an extension of kOS capabilities tha
 LaserDist can be downloaded here (it says it’s updated for KSP 1.11.x, but it works fine with 1.12.x too):  
 https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
-The kOS Control Panels Scripts are developed uunder KSP kOS and therefore are licensed in the same way as kOS itself. See the kOS license page for details.
-https://github.com/KSP-KOS/KOS?tab=License-1-ov-file#
+The kOS Control Panels Scripts are developed uunder KSP kOS and therefore are licensed in the same way as kOS itself. See the [kOS license page](https://github.com/KSP-KOS/KOS?tab=License-1-ov-file#) for details.
 
 ## Table of Contents
 [SCRIPTS FEATURES](#scripts-features)
