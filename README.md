@@ -55,6 +55,7 @@ The kOS Control Panels Scripts are developed uunder KSP kOS and therefore are li
 - Graphical input parameters pane with pre-filled values. This pane is displayed on script start (unless inapplicable, like `getlogs.ks` or `mkl.ks`) and provides a means to enter and/or edit initial values for variables used within the functional parts of user scripts. The pane also provides the ability to save entered values as inputs automatically loaded at start, or even save various variants of inputs that can be easily selected and saved/loaded on script start.
 
 - Basic Control Panel GUI, and more complex control multipanel GUIs with various controlling elements. These elements include combinations of buttons for easy increasing/decreasing of given values, popup menus to select various functionalities, textboxes for displaying messages and tooltips, etc. Complex panels can be minimized (hidden) and restored (shown again) to save screen space without affecting their operations, so the basic CP acts as a sort of task toolbar.
+![screenshot](images/multipanels.jpg)
 
 - Minipanels - purpose-specific compact panels that can be invoked/revoked, for example, by a toggle-type button. Minipanels usually contain sets of small control elements and help reduce the number of controlling elements on main panels, keeping them clear and much easier to navigate.
 ![screenshot](images/minipanel.jpg)
