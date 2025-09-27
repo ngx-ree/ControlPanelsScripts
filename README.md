@@ -4,7 +4,7 @@ Control Panels (CP) is a set of kOS scripts and libraries that provide a relativ
 
 Using and developing with CP scripts and libraries assumes prior knowledge of working with and programming in kOS, as well as programming in general. However, the code is not overly complicated, and if the comments and descriptions aren't enough, it can be easily reverse-engineered and adjusted to fit anyone's specific needs.
 
-These scripts were written on the fly as I played, so some parts could certainly have been done better and made more universal. I've tried to optimize them and eliminate as many bugs as possible. The libraries and the `example.ks script` are commented with a reasonable level of detail for easier orientation.
+These scripts were written on the fly as I played, so some parts could certainly have been done better and made more universal. I've tried to optimize them and eliminate as many bugs as possible. The libraries and the `example.ks` script are commented with a reasonable level of detail for easier orientation.
 
 If you come across a bug or any other problem, or if you need more detailed information, feel free to contact me at ngx.ree [at] gmail [dot] com.
 
