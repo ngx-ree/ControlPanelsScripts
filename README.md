@@ -105,13 +105,13 @@ Directory structure of CP scripts adds two subdirectories to the kOS default dir
 Unpack `CPShips.zip` or `CPShips_noLaser.zip` into your save's VAB Ships directory. This package contains example vessels to work with included example scripts. All vessels were created without any other parts mods than kOS and LaserDist. Vessels in `CPShips_noLaser.zip` are variants without LaserDist mod parts.
 
 'Elisa 1.0' - An example simple uncrewed vehicle, designed to run with the 'example.ks' script. It serves for demonstration of basic script usage and behavior.
-
+![screenshot](images/elisa.jpg)
 
 'Rufus 1.0' - A single-seated vehicle for the 'g66.ks' script demonstration and testing. It uses a "helicopter" control scheme and monopropellant engines only. Best to use on the Mun. This vehicle also contains laser-based distance measuring units (there is also a version without them), used to prevent the flying vehicle from hitting steeply elevated ground during flight (experimental).
-
+![screenshot](images/rufus.jpg)
 
 'Munica 1.0' - The rocket and the lander designed to get 'Rufus 1.0' to the Mun. It can use the 'gtrn.ks' script for launching to LKO and the 'lnd65.ks' script for Mun landing.
-
+![screenshot](images/munica.jpg)
 
 [back to TOC](#table-of-contents)
 
