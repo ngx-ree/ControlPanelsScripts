@@ -27,6 +27,7 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  - [Scripts installation](#scripts-installation)
  - [Directory structure](#directory-structure)
  - [Ships installation](#ships-installation)
+ - [Notepad++ KerboScript language import](#notepad++-kerboscript-language-import)
 
  [BEFORE YOU START](#before-you-start)
  - [Set your screen resolution](#set-your-screen-resolution)
@@ -82,10 +83,15 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 
 ## INSTALLATION
 
+The contents of the `ControlPanelScripts.zip` package are as follows:
+`Scripts` - Directory containing Control Panel scripts, libraries, and basic example configurations.
+`Ships/VAB` - Example vessels, described below.
+`kOS_dark.xml`, `kOS_light.xml` - Notepad++ language definitions for KerboScript, dark and light versions.
+`README.md`, `LICENSE.txt` - This README and license information.
+
 ### Scripts installation
 
-Simply unpack `ControlPanelScripts.zip` into the kOS archive directory, usually `[KSP installation folder]/Ships/Script/`. It is also a good idea to back up your `Script` directory beforehand, just to be sure.  
-There should be no file collisions, but in the very improbable case you have some of your scripts named the same as some of the CP scripts, rename the problematic CP script, but DO CHANGE the variable `scriptid` at the beginning of the script accordingly (see Script ID below).
+Unpack `Script` directory contents into the kOS archive's `Script` directory, usually `[KSP installation folder]/Ships/Script/`. It's also a good idea to back up your `Script` directory beforehand, just to be sure.
 
 ### Directory structure
 
@@ -102,7 +108,7 @@ Directory structure of CP scripts adds two subdirectories to the kOS default dir
 
 ### Ships installation
 
-Unpack `CPShips.zip` or `CPShips_noLaser.zip` into your save's VAB Ships directory. This package contains example vessels to work with included example scripts. All vessels were created without any other parts mods than kOS and LaserDist. Vessels in `CPShips_noLaser.zip` are variants without LaserDist mod parts.
+Unpack contents of `Ships/VAB` into your save's `Ships/VAB` directory. This package contains example vessels to work with the included example scripts. All vessels were created using no part mods other than kOS and LaserDist. Vessels with the '-noLaser' suffix are variants without LaserDist mod parts.
 
 'Elisa 1.0' - An example simple uncrewed vehicle, designed to run with the 'example.ks' script. It serves for demonstration of basic script usage and behavior.
 ![screenshot](images/elisa.jpg)
@@ -112,6 +118,16 @@ Unpack `CPShips.zip` or `CPShips_noLaser.zip` into your save's VAB Ships directo
 
 'Munica 1.0' - The rocket and the lander designed to get 'Rufus 1.0' to the Mun. It can use the 'gtrn.ks' script for launching to LKO and the 'lnd65.ks' script for Mun landing.
 ![screenshot](images/munica.jpg)
+
+### Notepad++ KerboScript language import
+
+There are two KerboScript language definitions in the package:
+`kOS_dark.xml` - Definition for dark mode.
+`kOS_light.xml` - Definition for light mode. This one is quite hastily derived from dark mode (because I use dark mode only), so it might need some additional adjustment.
+
+To import KerboScript definition(s) into Notepad++, open Notepad++ and go to Language -> User Defined Language -> Define Your Language, then click the `Import` button and browse to `kOS_dark.xml` and/or `kOS_light.xml`. After the import, restart Notepad++ and find the language definition(s) under the `Language` menu item.
+
+WARNING: I don't know if it is a Notepad++ bug or I have made some mistakes in the definitions, but sometimes (especially when working with comments) the code marking goes wrong from the cursor down (when it happens, you'll see it). Re-selecting the language from the menu fixes the problem.
 
 [back to TOC](#table-of-contents)
 
