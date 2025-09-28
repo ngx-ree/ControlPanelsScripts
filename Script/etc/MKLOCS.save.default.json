@@ -1,0 +1,174 @@
+{
+    "entries": [
+        {
+            "value": "locfiles",
+            "$type": "kOS.Safe.Encapsulation.StringValue"
+        },
+        {
+            "entries": [
+                {
+                    "value": "example.ks",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "items": [
+                        {
+                            "value": false,
+                            "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                        },
+                        {
+                            "value": "Example script",
+                            "$type": "kOS.Safe.Encapsulation.StringValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                },
+                {
+                    "value": "g66.ks",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "items": [
+                        {
+                            "value": false,
+                            "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                        },
+                        {
+                            "value": "\"Helicopter\" style controlled vessels",
+                            "$type": "kOS.Safe.Encapsulation.StringValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                },
+                {
+                    "value": "getlogs.ks",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "items": [
+                        {
+                            "value": false,
+                            "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                        },
+                        {
+                            "value": "Getting logs from another terminal",
+                            "$type": "kOS.Safe.Encapsulation.StringValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                },
+                {
+                    "value": "gtrn.ks",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "items": [
+                        {
+                            "value": false,
+                            "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                        },
+                        {
+                            "value": "Launch to orbit assistant",
+                            "$type": "kOS.Safe.Encapsulation.StringValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                },
+                {
+                    "value": "ht3.ks",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "items": [
+                        {
+                            "value": false,
+                            "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                        },
+                        {
+                            "value": "Hold vessel's position for EVA missions",
+                            "$type": "kOS.Safe.Encapsulation.StringValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                },
+                {
+                    "value": "lnd65.ks",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "items": [
+                        {
+                            "value": false,
+                            "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                        },
+                        {
+                            "value": "Simple automatic landing for rockets",
+                            "$type": "kOS.Safe.Encapsulation.StringValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                },
+                {
+                    "value": "newname.ks",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "items": [
+                        {
+                            "value": true,
+                            "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                        },
+                        {
+                            "value": "Data migration to renamed ship",
+                            "$type": "kOS.Safe.Encapsulation.StringValue"
+                        }
+                    ],
+                    "$type": "kOS.Safe.Encapsulation.ListValue"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        },
+        {
+            "value": "cpopts",
+            "$type": "kOS.Safe.Encapsulation.StringValue"
+        },
+        {
+            "entries": [
+                {
+                    "value": "clretc",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "value": true,
+                    "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                },
+                {
+                    "value": "cpetc",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "value": true,
+                    "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                },
+                {
+                    "value": "cplib",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "value": true,
+                    "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                },
+                {
+                    "value": "cpsets",
+                    "$type": "kOS.Safe.Encapsulation.StringValue"
+                },
+                {
+                    "value": false,
+                    "$type": "kOS.Safe.Encapsulation.BooleanValue"
+                }
+            ],
+            "$type": "kOS.Safe.Encapsulation.Lexicon"
+        }
+    ],
+    "$type": "kOS.Safe.Encapsulation.Lexicon"
+}
