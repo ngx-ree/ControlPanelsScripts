@@ -33,7 +33,7 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  - [Instructions per update](#instructions-per-update)
  - [kOS HDD sizes](#kos-hdd-sizes)
  - [Script ID (`scriptid` variable)](#script-id)
- - [Templates](#templates)
+ - [Templates and include files](#templates-and-include-files)
  - [Local ship files handling](#local-ship-files-handling)
  - [Usage considerations](#usage-considerations)
  - [Development considerations](#development-considerations)
@@ -147,7 +147,7 @@ When placing kOS processors on your vessel, use full HDD sizes for kOS CPUs. The
 Each script must have its `scriptid` variable set to the script's name (without .ks extension). The `scriptid` variable is crucial for file operations (configurations, settings, saves and loads) to work correctly.
 
 ### Templates and include files
-If no template for a given script exists in the 'etc/templates' subdirectory, the script creates an empty include file in the ship's configuration subdirectory. This file must be manually edited before it works. If the script was run on the ship's local volume, obviously, this file is created on that local volume. Then, it must either be edited with the kOS editor ('edit filename.' command) or copied to the archive (or created under the same name), edited in any text editor and copied back to the local volume. To avoid this hassle, it is good to make sure at least the template is always present for a given script.
+If no template for a given script exists in the 'etc/templates' subdirectory, the script creates an empty include file in the ship's configuration subdirectory and then crashes (since it contains undeclared variables). This file must be manually edited before it works. If the script was run on the ship's local volume, obviously, this file is created on that local volume. Then, it must either be edited with the kOS editor ('edit filename.' command) or copied to the archive (or created under the same name), edited in any text editor and copied back to the local volume. To avoid this hassle, it is good to make sure at least the template is always present for a given script.
 
 ### Local ship files handling
 `mkl.ks` script  
