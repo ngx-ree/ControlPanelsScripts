@@ -84,10 +84,15 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
 ## INSTALLATION
 
 The contents of the `ControlPanelScripts.zip` package are as follows:  
+
 `Scripts` - Directory containing Control Panel scripts, libraries, and basic example configurations.  
+
 `Ships/VAB` - Directory containing example vessels, described below.  
+
 `images` - Directory containiong screenshots used in this README.  
+
 `kOS_dark.xml`, `kOS_light.xml` - Notepad++ language definitions for KerboScript, dark and light versions.  
+
 `README.md`, `LICENSE.txt` - This README and license information.  
 
 ### Scripts installation
