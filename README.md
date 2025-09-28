@@ -6,6 +6,8 @@ Using and developing with CP scripts and libraries assumes prior knowledge of wo
 
 These scripts were written on the fly as I played, so some parts could certainly have been done better and made more universal. I've tried to optimize them and eliminate as many bugs as possible. The libraries and the `example.ks` script are commented with a reasonable level of detail for easier orientation.
 
+Besides the description, there are demonstration videos available. The example script usage video is in the [example.ks](#exampleks) section. Videos of the rest of the included scripts in action are in the [Extras](#extras) section.
+
 If you come across a bug or any other problem, or if you need more detailed information, feel free to contact me at ngx.ree [at] gmail [dot] com.
 
 CP scripts require kOS version 1.5 or higher. The latest version can be found here:  
