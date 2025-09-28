@@ -27,7 +27,7 @@ https://github.com/Dunbaratu/LaserDist/releases/tag/v1.4.0
  - [Scripts installation](#scripts-installation)
  - [Directory structure](#directory-structure)
  - [Ships installation](#ships-installation)
- - [Notepad++ KerboScript language import](#notepad++-kerboscript-language-import)
+ - [Notepad++ KerboScript language import](#notepad-kerboscript-language-import)
 
  [BEFORE YOU START](#before-you-start)
  - [Set your screen resolution](#set-your-screen-resolution)
