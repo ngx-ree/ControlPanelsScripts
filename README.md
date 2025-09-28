@@ -2,7 +2,7 @@
 
 Control Panels (CP) is a set of kOS scripts and libraries that provide a relatively easy way to assemble functional GUIs for controlling loop-based kOS scripts. The scripts use stacks, buttons, sliders, and other graphical elements, along with options to save and load PID parameters (or any other values) as named presets. I've been writing and using these scripts for several years, and since I recycle them quite often, I figured they could be useful for other kOS enthusiasts as well.
 
-Using and developing with CP scripts and libraries assumes prior knowledge of working with and programming in kOS, as well as programming in general. However, the code is not overly complicated, and if the comments and descriptions aren't enough, it can be easily reverse-engineered and adjusted to fit anyone's specific needs.
+Developing with CP scripts and libraries assumes prior knowledge of working with and programming in kOS, as well as programming in general. However, the code is not overly complicated, and if the comments and descriptions aren't enough, it can be easily reverse-engineered and adjusted to fit anyone's specific needs.
 
 These scripts were written on the fly as I played, so some parts could certainly have been done better and made more universal. I've tried to optimize them and eliminate as many bugs as possible. The libraries and the `example.ks` script are commented with a reasonable level of detail for easier orientation.
 
