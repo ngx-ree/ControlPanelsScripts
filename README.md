@@ -89,8 +89,6 @@ The contents of the `ControlPanelScripts.zip` package are as follows:
 
 `Ships/VAB` - Directory containing example vessels, described below.  
 
-`images` - Directory containiong screenshots used in this README. This directory can be ignored, don't copy it anywhere.  
-
 `kOS_dark.xml`, `kOS_light.xml` - Notepad++ language definitions for KerboScript, dark and light versions.  
 
 `README.md`, `LICENSE.txt` - This README and license information.  
